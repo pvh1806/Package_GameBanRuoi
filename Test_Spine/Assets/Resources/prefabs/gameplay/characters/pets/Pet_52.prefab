@@ -1,0 +1,1257 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1988472859344338
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4765464295472922}
+  - component: {fileID: 50411357136120789}
+  - component: {fileID: 114725572486475644}
+  m_Layer: 0
+  m_Name: Pet_52
+  m_TagString: Pet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4765464295472922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988472859344338}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4696380413234369}
+  - {fileID: 4772198562751071}
+  - {fileID: 4504816849670359}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!50 &50411357136120789
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988472859344338}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &114725572486475644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988472859344338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f04a96c7f0b736fd23cc48a79b4effd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  element: 3
+  bodyCharInfo:
+    sizeOnCamera: {x: 1, y: 1}
+    bodySize: {x: 1, y: 1}
+    centerPos: {x: 0, y: 0}
+  listPrefabNeedToCreateInPool:
+  - myType: 1
+    prefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+    quantity: 2
+  - myType: 2
+    prefab: {fileID: 1818096892530099, guid: 75238306d94927c4197278c2f403c021, type: 2}
+    quantity: 2
+  - myType: 2
+    prefab: {fileID: 1450496473526038, guid: 583b7c43c9162c7439c5925479f95d12, type: 2}
+    quantity: 2
+  shakeCameraInfo:
+    timeShake: 0
+    shakeIntensity: 0
+    canShake: 0
+  myAnimator: {fileID: 95633327936104639}
+  parameterBonus:
+    percentDamageBonus: 0
+    criticalChanceBonus: 0
+    percentAtkSpeedBonus: 0
+    percentDamageBonusBuffToPet: 0
+    percentAtkSpeedBonusBuffToPet: 0
+    criticalChanceBonusBuffToPet: 0
+    percentDamageBonusFromPowerUp: 0
+    criticalChanceBonusWhenShootMiss: 0
+    criticalChanceBonusWhenFightBoss: 0
+    percentDamageBonusWhenFightBoss: 0
+    percentDamageBonusWhenEnemyClose: 0
+    criticalChanceBonusWhenEnemyClose: 0
+    percentDamageBonusWhenEnemyIsUnbenefitcal: 0
+    percentDamageBonusWhenEnemyIsWeak: 0
+    percentDamageBonusWhenEnemyHasElementalAbuse: 0
+    percentDamageBonusToNextTarget: 0
+    criticalChanceBonusToNextTarget: 0
+    comboStrikeValueDetail:
+      percentDamageBonus:
+        currentCryptoKey: 0
+        currentCryptoOffset: 0
+        hiddenValue1:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValue2:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValueOld:
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      limitPercentDamageBonus:
+        currentCryptoKey: 0
+        currentCryptoOffset: 0
+        hiddenValue1:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValue2:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValueOld:
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    bloodThirstyValueDetail:
+      percentDamageBonus:
+        currentCryptoKey: 0
+        currentCryptoOffset: 0
+        hiddenValue1:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValue2:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValueOld:
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      limitPercentDamageBonus:
+        currentCryptoKey: 0
+        currentCryptoOffset: 0
+        hiddenValue1:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValue2:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValueOld:
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    criticalBonusWhenMountStandStill: 0
+    berserkValueDetail:
+      percentAtkSpeedBonus:
+        currentCryptoKey: 0
+        currentCryptoOffset: 0
+        hiddenValue1:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValue2:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValueOld:
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+      timeDuration:
+        currentCryptoKey: 0
+        currentCryptoOffset: 0
+        hiddenValue1:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValue2:
+          b1: 0
+          b2: 0
+          b3: 0
+          b4: 0
+        hiddenValueOld:
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    percentStatusEffectAppearBonus: 0
+    percentStatusEffectAppearBonusWhenMissBefore: 0
+    percentStatusEffectTimeBonus: 0
+    killIfPercentHpOfEnemyRemain: 0
+    percentGetDoubleCoinFromMonster: 0
+    percentDecreaseSpecialSkillCountdown: 0
+    percentDamageBonusWhenHaveManyEnemiesInScreen: 0
+    percentDamageBonusWhenBeSurrounded: 0
+    percentAtkSpeedBonusWhenBeBleeding: 0
+    percentAtkSpeedBonusInTheMomentAfterUsingSpecialSkill: 0
+    criticalChanceBonusInTheMomentAfterUsingSpecialSkill: 0
+    percentDamageBonusAfterUsingSpecialSkill: 0
+    criticalChanceBonusAfterUsingSpecialSkill: 0
+    percentAtkSpeedBonusAfterUsingSpecialSkill: 0
+    percentDamageBonusAtFirstHit: 0
+    criticalChanceBonusAtFirstHit: 0
+    percentDamageBonusAfterThreeTimesShot: 0
+    criticalChanceBonusAfterThreeTimesShot: 0
+    percentGoldCollectedBonus: 0
+    percentScoreCollectedBonus: 0
+    percentExpBonusToPet: 0
+    damageBonus: 0
+    percentDamageBonusVsFireMonster: 0
+    percentDamageBonusVsWaterMonster: 0
+    percentDamageBonusVsWoodMonster: 0
+    criticalChanceBonusVsFireMonster: 0
+    criticalChanceBonusVsWaterMonster: 0
+    criticalChanceBonusVsWoodMonster: 0
+    percentIncreaseChangeToDropSpecialSkillPowerUp: 0
+    percentTimeUseDoubleScoreBonus: 0
+    percentTimeUseAtkPowerUpBonus: 0
+    percentDamageSpecialSkillBonus: 0
+    freezeStatusEffectBonus:
+      basicFreezingChance: 0
+      basicTimeFreezing: 0
+      basicSlowChance: 0
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffectBonus:
+      basicPoisonChance: 0
+      basicTimePoison: 0
+      basicDamagePoison: 0
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffectBonus:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    percentValueDropEggEarly: 0
+    percentDecreaseMagicalChestCountdown: 0
+  gunController: {fileID: 114890510885673115}
+--- !u!1 &1374897411999106
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4696380413234369}
+  - component: {fileID: 95633327936104639}
+  m_Layer: 0
+  m_Name: AnimRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4696380413234369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374897411999106}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4662280227097452}
+  m_Father: {fileID: 4765464295472922}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95633327936104639
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374897411999106}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 99e25485aeafe1646beaa17f67f3284a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage:
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1777820428620944
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4662280227097452}
+  m_Layer: 0
+  m_Name: Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4662280227097452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777820428620944}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4671239559486840}
+  - {fileID: 4640618514904024}
+  m_Father: {fileID: 4696380413234369}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1937292123474608
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4671239559486840}
+  m_Layer: 0
+  m_Name: Hold_Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4671239559486840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937292123474608}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4356505474576279}
+  m_Father: {fileID: 4662280227097452}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1627306467266027
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4356505474576279}
+  - component: {fileID: 212414206279239220}
+  m_Layer: 0
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4356505474576279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627306467266027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4671239559486840}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212414206279239220
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627306467266027}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1756942435
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: fe744a1350ab58540b2de6fc2c97f529, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1757149430435522
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4640618514904024}
+  m_Layer: 0
+  m_Name: Group_Arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4640618514904024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757149430435522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.4, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4971330010984242}
+  - {fileID: 4368186175366335}
+  m_Father: {fileID: 4662280227097452}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1467308317117839
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4971330010984242}
+  m_Layer: 0
+  m_Name: Hold_ArmA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4971330010984242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467308317117839}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4904081692796585}
+  m_Father: {fileID: 4640618514904024}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1821133170861160
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4904081692796585}
+  - component: {fileID: 212616752554851223}
+  m_Layer: 0
+  m_Name: ArmA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4904081692796585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821133170861160}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4971330010984242}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212616752554851223
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821133170861160}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1756942435
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 26d21a7f206639143b3aab73a9d2b507, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1096609790949245
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4368186175366335}
+  m_Layer: 0
+  m_Name: Hold_ArmB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4368186175366335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096609790949245}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4744712206425567}
+  m_Father: {fileID: 4640618514904024}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1163068854405923
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4744712206425567}
+  - component: {fileID: 212001569120651486}
+  m_Layer: 0
+  m_Name: ArmB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4744712206425567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163068854405923}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4368186175366335}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212001569120651486
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163068854405923}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1756942435
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 26d21a7f206639143b3aab73a9d2b507, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1093926133798859
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4772198562751071}
+  - component: {fileID: 114890510885673115}
+  m_Layer: 13
+  m_Name: Gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4772198562751071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093926133798859}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4765464295472922}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114890510885673115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093926133798859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f1b7da5384530c63d2bc853e515783, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isGunOfEnemy: 0
+  gunValueDetail:
+    element: 3
+    gunsLevelDetail:
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1154404078855069, guid: 3152d26b71b24a04a896cef514ab86d9, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    atkSpeed:
+      currentCryptoKey: 110795
+      currentCryptoOffset: 249173
+      hiddenValue1:
+        b1: 154
+        b2: 166
+        b3: 41
+        b4: 63
+      hiddenValue2:
+        b1: 150
+        b2: 139
+        b3: 186
+        b4: 62
+      hiddenValueOld:
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    criticalChance: 0
+    freezeStatusEffect:
+      basicFreezingChance: 0
+      basicTimeFreezing: 0
+      basicSlowChance: 0
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffect:
+      basicPoisonChance: 0
+      basicTimePoison: 0
+      basicDamagePoison: 0
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffect:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    knockBackInfo:
+      knockBackChance: 0
+      timeKnockBack: 0
+      knockBackRange: 0
+    canParalyzed: 0
+  effShot: {fileID: 0}
+  speedOfBullet: 10
+  rangeShot: 12
+  numberOfShot: -1
+  numWavePerShot: 1
+  numerOfBulletPerWave: 1
+  timeDelayForEachWave: 0
+  orientate: 0
+  findTargetController: {fileID: 0}
+  onlyOrientateOncePerShot: 0
+  hasArrangeBySizeOfBullet: 1
+  dxPos: 0
+--- !u!1 &1101886101754410
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4504816849670359}
+  - component: {fileID: 61128711126602896}
+  m_Layer: 13
+  m_Name: MainCollider
+  m_TagString: Pet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4504816849670359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101886101754410}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4765464295472922}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61128711126602896
+BoxCollider2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101886101754410}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.4, y: 0.4}
+  m_EdgeRadius: 0

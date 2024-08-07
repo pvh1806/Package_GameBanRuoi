@@ -1,0 +1,1228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1180406542976495
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4134215860688456}
+  - component: {fileID: 50040519355068594}
+  - component: {fileID: 114185474848966793}
+  m_Layer: 0
+  m_Name: Pet_75
+  m_TagString: Pet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4134215860688456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180406542976495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.701, y: -1.572, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4102937810755774}
+  - {fileID: 4975389109269387}
+  - {fileID: 4401283921425774}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!50 &50040519355068594
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180406542976495}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &114185474848966793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180406542976495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c12d456041d6d13af9e4ec1834bd94, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  element: 2
+  bodyCharInfo:
+    sizeOnCamera: {x: 1, y: 1}
+    bodySize: {x: 1, y: 1}
+    centerPos: {x: 0, y: 0}
+  listPrefabNeedToCreateInPool:
+  - myType: 1
+    prefab: {fileID: 1872741613825185, guid: f6cdd459d53140e408ed54fc294dcd77, type: 2}
+    quantity: 2
+  - myType: 1
+    prefab: {fileID: 1104853146779396, guid: e9e4e066e8dd44f4c8c678e66b3670d6, type: 2}
+    quantity: 20
+  - myType: 2
+    prefab: {fileID: 1818096892530099, guid: 75238306d94927c4197278c2f403c021, type: 2}
+    quantity: 20
+  - myType: 2
+    prefab: {fileID: 1450496473526038, guid: 583b7c43c9162c7439c5925479f95d12, type: 2}
+    quantity: 20
+  shakeCameraInfo:
+    timeShake: 0
+    shakeIntensity: 0
+    canShake: 0
+  myAnimator: {fileID: 95043138832043743}
+  parameterBonus:
+    percentDamageBonus: 0
+    criticalChanceBonus: 0
+    percentAtkSpeedBonus: 0
+    percentDamageBonusBuffToPet: 0
+    percentAtkSpeedBonusBuffToPet: 0
+    criticalChanceBonusBuffToPet: 0
+    percentDamageBonusFromPowerUp: 0
+    criticalChanceBonusWhenShootMiss: 0
+    criticalChanceBonusWhenFightBoss: 0
+    percentDamageBonusWhenFightBoss: 0
+    percentDamageBonusWhenEnemyClose: 0
+    criticalChanceBonusWhenEnemyClose: 0
+    percentDamageBonusWhenEnemyIsUnbenefitcal: 0
+    percentDamageBonusWhenEnemyIsWeak: 0
+    percentDamageBonusWhenEnemyHasElementalAbuse: 0
+    percentDamageBonusToNextTarget: 0
+    criticalChanceBonusToNextTarget: 0
+    comboStrikeValueDetail:
+      percentDamageBonus:
+        currentCryptoKey: 147540
+        currentCryptoOffset: 477813
+        hiddenValue1:
+          b1: 33
+          b2: 10
+          b3: 5
+          b4: 0
+        hiddenValue2:
+          b1: 33
+          b2: 10
+          b3: 5
+          b4: 0
+        hiddenValueOld:
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      limitPercentDamageBonus:
+        currentCryptoKey: 883161
+        currentCryptoOffset: 534829
+        hiddenValue1:
+          b1: 244
+          b2: 80
+          b3: 5
+          b4: 0
+        hiddenValue2:
+          b1: 244
+          b2: 80
+          b3: 5
+          b4: 0
+        hiddenValueOld:
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+    bloodThirstyValueDetail:
+      percentDamageBonus:
+        currentCryptoKey: 142057
+        currentCryptoOffset: 404534
+        hiddenValue1:
+          b1: 223
+          b2: 6
+          b3: 4
+          b4: 0
+        hiddenValue2:
+          b1: 223
+          b2: 6
+          b3: 4
+          b4: 0
+        hiddenValueOld:
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      limitPercentDamageBonus:
+        currentCryptoKey: 792980
+        currentCryptoOffset: 278914
+        hiddenValue1:
+          b1: 22
+          b2: 88
+          b3: 8
+          b4: 0
+        hiddenValue2:
+          b1: 22
+          b2: 88
+          b3: 8
+          b4: 0
+        hiddenValueOld:
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+    criticalBonusWhenMountStandStill: 0
+    berserkValueDetail:
+      percentAtkSpeedBonus:
+        currentCryptoKey: 854805
+        currentCryptoOffset: 479758
+        hiddenValue1:
+          b1: 27
+          b2: 89
+          b3: 10
+          b4: 0
+        hiddenValue2:
+          b1: 27
+          b2: 89
+          b3: 10
+          b4: 0
+        hiddenValueOld:
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+      timeDuration:
+        currentCryptoKey: 116024
+        currentCryptoOffset: 573580
+        hiddenValue1:
+          b1: 180
+          b2: 5
+          b3: 9
+          b4: 0
+        hiddenValue2:
+          b1: 180
+          b2: 5
+          b3: 9
+          b4: 0
+        hiddenValueOld:
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 1
+    percentStatusEffectAppearBonus: 0
+    percentStatusEffectAppearBonusWhenMissBefore: 0
+    percentStatusEffectTimeBonus: 0
+    killIfPercentHpOfEnemyRemain: 0
+    percentGetDoubleCoinFromMonster: 0
+    percentDecreaseSpecialSkillCountdown: 0
+    percentDamageBonusWhenHaveManyEnemiesInScreen: 0
+    percentDamageBonusWhenBeSurrounded: 0
+    percentAtkSpeedBonusWhenBeBleeding: 0
+    percentAtkSpeedBonusInTheMomentAfterUsingSpecialSkill: 0
+    criticalChanceBonusInTheMomentAfterUsingSpecialSkill: 0
+    percentDamageBonusAfterUsingSpecialSkill: 0
+    criticalChanceBonusAfterUsingSpecialSkill: 0
+    percentAtkSpeedBonusAfterUsingSpecialSkill: 0
+    percentDamageBonusAtFirstHit: 0
+    criticalChanceBonusAtFirstHit: 0
+    percentDamageBonusAfterThreeTimesShot: 0
+    criticalChanceBonusAfterThreeTimesShot: 0
+    percentGoldCollectedBonus: 0
+    percentScoreCollectedBonus: 0
+    percentExpBonusToPet: 0
+    damageBonus: 0
+    percentDamageBonusVsFireMonster: 0
+    percentDamageBonusVsWaterMonster: 0
+    percentDamageBonusVsWoodMonster: 0
+    criticalChanceBonusVsFireMonster: 0
+    criticalChanceBonusVsWaterMonster: 0
+    criticalChanceBonusVsWoodMonster: 0
+    percentIncreaseChangeToDropSpecialSkillPowerUp: 0
+    percentTimeUseDoubleScoreBonus: 0
+    percentTimeUseAtkPowerUpBonus: 0
+    percentDamageSpecialSkillBonus: 0
+    freezeStatusEffectBonus:
+      basicFreezingChance: 0
+      basicTimeFreezing: 0
+      basicSlowChance: 0
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffectBonus:
+      basicPoisonChance: 0
+      basicTimePoison: 0
+      basicDamagePoison: 0
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffectBonus:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    percentValueDropEggEarly: 0
+    percentDecreaseMagicalChestCountdown: 0
+  gunController: {fileID: 114486713759884830}
+--- !u!1 &1225460373165277
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4102937810755774}
+  - component: {fileID: 95043138832043743}
+  m_Layer: 0
+  m_Name: AnimRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4102937810755774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225460373165277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4168002063074468}
+  m_Father: {fileID: 4134215860688456}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!95 &95043138832043743
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225460373165277}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61392823f9459284fa089f6b798576b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage:
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1985460443672822
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4168002063074468}
+  m_Layer: 0
+  m_Name: Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4168002063074468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985460443672822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4206496222844826}
+  m_Father: {fileID: 4102937810755774}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1901967037528655
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4206496222844826}
+  m_Layer: 0
+  m_Name: BodyHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4206496222844826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901967037528655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4292766026413842}
+  - {fileID: 4344028813484834}
+  - {fileID: 4483854165148106}
+  m_Father: {fileID: 4168002063074468}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1438416298093815
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4292766026413842}
+  - component: {fileID: 212257080952168352}
+  m_Layer: 0
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4292766026413842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438416298093815}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4206496222844826}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212257080952168352
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438416298093815}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1756942435
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c5dc6b9d56b2bd640b2182602670fd3d, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1090785894992489
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4344028813484834}
+  m_Layer: 0
+  m_Name: WingHolderA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4344028813484834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090785894992489}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1, y: 0.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4455761401956607}
+  m_Father: {fileID: 4206496222844826}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1737021563318407
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4455761401956607}
+  - component: {fileID: 212267806219044065}
+  m_Layer: 0
+  m_Name: WingA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4455761401956607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737021563318407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4344028813484834}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212267806219044065
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737021563318407}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1756942435
+  m_SortingLayer: 3
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 91cc13fc146dacc4f9c97f5b3d4a64b3, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1103326005378881
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4483854165148106}
+  m_Layer: 0
+  m_Name: WingHolderB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4483854165148106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103326005378881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1, y: 0.2, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4338113776862164}
+  m_Father: {fileID: 4206496222844826}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1869605055803394
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4338113776862164}
+  - component: {fileID: 212912167806293603}
+  m_Layer: 0
+  m_Name: WingB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4338113776862164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869605055803394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4483854165148106}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212912167806293603
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869605055803394}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1756942435
+  m_SortingLayer: 3
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 91cc13fc146dacc4f9c97f5b3d4a64b3, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1318252647341839
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4975389109269387}
+  - component: {fileID: 114486713759884830}
+  m_Layer: 0
+  m_Name: Gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4975389109269387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318252647341839}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4134215860688456}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114486713759884830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318252647341839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f1b7da5384530c63d2bc853e515783, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isGunOfEnemy: 0
+  gunValueDetail:
+    element: 2
+    gunsLevelDetail:
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1192005080114821, guid: 3118f29d282e53940afdfcf542280ae2, type: 2}
+      damage: 1760
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    atkSpeed:
+      currentCryptoKey: 110795
+      currentCryptoOffset: 303305
+      hiddenValue1:
+        b1: 147
+        b2: 196
+        b3: 65
+        b4: 62
+      hiddenValue2:
+        b1: 31
+        b2: 214
+        b3: 99
+        b4: 62
+      hiddenValueOld:
+      inited: 1
+      fakeValue: 0.4
+      fakeValueActive: 1
+    criticalChance: 0
+    freezeStatusEffect:
+      basicFreezingChance: 0
+      basicTimeFreezing: 0
+      basicSlowChance: 0
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffect:
+      basicPoisonChance: 100
+      basicTimePoison: 1
+      basicDamagePoison: 40
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffect:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    knockBackInfo:
+      knockBackChance: 0
+      timeKnockBack: 0
+      knockBackRange: 0
+    canParalyzed: 0
+  effShot: {fileID: 0}
+  speedOfBullet: 2.5
+  rangeShot: 4
+  numberOfShot: -1
+  numWavePerShot: 1
+  numerOfBulletPerWave: 1
+  timeDelayForEachWave: 0
+  orientate: 0
+  findTargetController: {fileID: 0}
+  onlyOrientateOncePerShot: 0
+  hasArrangeBySizeOfBullet: 0
+  dxPos: 0
+--- !u!1 &1547837239199459
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4401283921425774}
+  - component: {fileID: 61265113035020408}
+  m_Layer: 13
+  m_Name: MainCollider
+  m_TagString: Pet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4401283921425774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547837239199459}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4134215860688456}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61265113035020408
+BoxCollider2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547837239199459}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.4, y: 0.4}
+  m_EdgeRadius: 0

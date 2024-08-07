@@ -1,0 +1,4193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1165366074091460
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4958028844015281}
+  - component: {fileID: 50815813468263550}
+  - component: {fileID: 114332075832754205}
+  - component: {fileID: 114343286264594191}
+  - component: {fileID: 114567890627115074}
+  - component: {fileID: 114905116793130740}
+  - component: {fileID: 114454753935779171}
+  m_Layer: 0
+  m_Name: Boss05_Controller_v3
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4958028844015281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165366074091460}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.13, y: 1.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4958456144806036}
+  - {fileID: 4889554259635187}
+  - {fileID: 4150124052361901}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50815813468263550
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165366074091460}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &114332075832754205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165366074091460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d235d28ac5116fce39abc6c6f355ff87, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  targetType: 0
+  lockTargetOnAwake: 0
+--- !u!114 &114343286264594191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165366074091460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4c8369f71fe12dabdf6bfaf2daea78, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  materials:
+  - {fileID: 2100000, guid: ddfc5e9335752084680cb23f708f8e14, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 93c26c2b469eff248b182823b50db815, type: 3}
+--- !u!114 &114567890627115074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165366074091460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db549a8bd88bff655802e3e9f97889f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  element: 0
+  bodyCharInfo:
+    sizeOnCamera: {x: 1, y: 1}
+    bodySize: {x: 1, y: 1}
+    centerPos: {x: 0, y: 0}
+  listPrefabNeedToCreateInPool: []
+  shakeCameraInfo:
+    timeShake: 0.2
+    shakeIntensity: 0.05
+    canShake: 1
+  effDiePrefab: {fileID: 1490213018741473, guid: 133951000db54b4429019396edb53dff, type: 2}
+  effDiePrefabOld: {fileID: 1678414966611943, guid: 6add28123b5a7ed4398ca333c0247103, type: 2}
+  hpBarPrefab: {fileID: 0}
+  crosshairPrefab: {fileID: 0}
+  myAnimator: {fileID: 95669571721620416}
+  transformDefaultToAddEffHit: {fileID: 0}
+  myBodyPartRenderers:
+  - {fileID: 212134263503044683}
+  - {fileID: 212068464272082046}
+  - {fileID: 212604081752585254}
+  - {fileID: 212798079828787904}
+  - {fileID: 212925914533036103}
+  - {fileID: 212302341024441374}
+  myNameTerm:
+  _listGuns: []
+  _listSfxShot: []
+  hp: 70000
+  maxHp: 0
+  hasArmor: 0
+  score: 100
+  baseLevel: 100
+  moveSpeedIncreasePerLevel: 0.015
+  attackSpeedIncreasePerLevel: 0.005
+  bulletSpeedIncreasePerLevel: 0.03
+  hpIncreasementPerLevel: 0.015
+  scoreBonusIncreasementPerLevel: 0.05
+  itemDropRate: 1
+  listItemCanDrop:
+  - item: {fileID: 1610005916409834, guid: cd0bf9c127e440b4da97d32842bf2188, type: 2}
+    weight: 1
+  numItemCanDrop:
+    min: 14
+    max: 20
+  resistanceDetail:
+    poisonResistance: 0
+    burnedResistance: 0
+    coldResistance: 0
+  graphOwner: {fileID: 114454753935779171}
+  gunGroupController: {fileID: 114025663522023017}
+  _followPosition: {fileID: 0}
+  _followPositionSFM: {fileID: 0}
+  MovementStatus: 0
+  _smoothTime: 0
+  _distanceSqr: 0
+  body: {fileID: 50815813468263550}
+  customAtkLevel: 0
+  customHpLevel: 0
+  prefabSmallExplosion: {fileID: 1946043027646862, guid: cf79006c1f79e374e8abd9bd5a38c056, type: 2}
+  prefabSmallExplosionOld: {fileID: 1084611741813991, guid: fb0464699507a144e99b53268c5c1c86, type: 2}
+  findTargetController: {fileID: 114332075832754205}
+  underlingGroupController: {fileID: 114380849395750498}
+--- !u!114 &114905116793130740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165366074091460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -62098573, guid: b322e336b28dfb68b305454799d4f1b3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{"random pos":{"_name":"random pos","_id":"05b16afa-f548-4973-b61a-f99f594c755e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"PC Position":{"_name":"PC Position","_id":"1b8b1deb-11cd-4588-9b9a-1cd4fe8cf3f4","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Gun0 Position":{"_name":"Gun0 Position","_id":"257ff2a8-9d46-402d-96b2-b5c834159870","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"GunAndPCAngle":{"_name":"GunAndPCAngle","_id":"ca886131-07bb-40c9-88fa-154867a4cb22","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"shield":{"_name":"shield","_id":"4756969f-b844-4f5d-97ee-740bf9c75f30","$type":"NodeCanvas.Framework.Variable`1[[BossUnderlingGroupController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"shield animator":{"_name":"shield animator","_id":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"targetPosition":{"_name":"targetPosition","_id":"d5109516-85b7-4144-bbe4-5d8f6aa88fec","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"alert":{"_name":"alert","_id":"479bc472-f4f0-4d7c-914a-68a11cffff8f","$type":"NodeCanvas.Framework.Variable`1[[BossUnderlingGroupController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"randPos1":{"_name":"randPos1","_id":"6eff6ed5-905b-44e6-9797-77db9586747a","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"randPos2":{"_name":"randPos2","_id":"293159bf-e332-4ded-a8c4-a411e996049e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"randPos3":{"_name":"randPos3","_id":"c4cdf635-e805-4a2c-a868-7bcaf75ff54a","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"alert1":{"_name":"alert1","_id":"cd3183e6-7b22-43c4-9922-04f9121338ac","$type":"NodeCanvas.Framework.Variable`1[[BossUnderlingGroupController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"alert3":{"_name":"alert3","_id":"f09faa74-f5ff-40ec-ae8a-ce381e48db28","$type":"NodeCanvas.Framework.Variable`1[[BossUnderlingGroupController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"alert2":{"_name":"alert2","_id":"d8e4be05-51ae-4df2-a4cb-f72db41d1d78","$type":"NodeCanvas.Framework.Variable`1[[BossUnderlingGroupController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"listPos":{"_value":[],"_name":"listPos","_id":"e76d9051-6560-42a7-87ca-505e741a5b75","$type":"NodeCanvas.Framework.Variable`1[[System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"pos4":{"_name":"pos4","_id":"b36aaa1c-8c19-4559-add8-607bcd0660da","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+  _objectReferences: []
+  _serializedVariables:
+  - _json: '{"_name":"random pos","_id":"05b16afa-f548-4973-b61a-f99f594c755e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"PC Position","_id":"1b8b1deb-11cd-4588-9b9a-1cd4fe8cf3f4","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"Gun0 Position","_id":"257ff2a8-9d46-402d-96b2-b5c834159870","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"GunAndPCAngle","_id":"ca886131-07bb-40c9-88fa-154867a4cb22","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"shield","_id":"4756969f-b844-4f5d-97ee-740bf9c75f30","$type":"NodeCanvas.Framework.Variable`1[[BossUnderlingGroupController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"shield animator","_id":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"targetPosition","_id":"d5109516-85b7-4144-bbe4-5d8f6aa88fec","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"alert","_id":"479bc472-f4f0-4d7c-914a-68a11cffff8f","$type":"NodeCanvas.Framework.Variable`1[[BossUnderlingGroupController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"randPos1","_id":"6eff6ed5-905b-44e6-9797-77db9586747a","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"randPos2","_id":"293159bf-e332-4ded-a8c4-a411e996049e","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"randPos3","_id":"c4cdf635-e805-4a2c-a868-7bcaf75ff54a","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"alert1","_id":"cd3183e6-7b22-43c4-9922-04f9121338ac","$type":"NodeCanvas.Framework.Variable`1[[BossUnderlingGroupController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"alert3","_id":"f09faa74-f5ff-40ec-ae8a-ce381e48db28","$type":"NodeCanvas.Framework.Variable`1[[BossUnderlingGroupController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"alert2","_id":"d8e4be05-51ae-4df2-a4cb-f72db41d1d78","$type":"NodeCanvas.Framework.Variable`1[[BossUnderlingGroupController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_value":[],"_name":"listPos","_id":"e76d9051-6560-42a7-87ca-505e741a5b75","$type":"NodeCanvas.Framework.Variable`1[[System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"pos4","_id":"b36aaa1c-8c19-4559-add8-607bcd0660da","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+--- !u!114 &114454753935779171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165366074091460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1296402158, guid: b322e336b28dfb68b305454799d4f1b3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  _serializedExposedParameters: []
+  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":1731.948,"y":-641.9869},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"0"},{"_position":{"x":-237.7537,"y":-438.5254},"_comment":"intro","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"1"},{"_position":{"x":-695.6849,"y":-248.6993},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"_action":{"actions":[{"minValue":{"_value":{"y":2.0}},"maxValue":{"_value":{"y":2.0}},"outputVariable":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"monsterPrefab":1,"position":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"parentGroup":{},"storedVariable":{"_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_SpawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":-1274.284,"y":-81.04755},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_action":{"outputVariable":{"_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"overrideAgent":{"_type":"IEnemyController","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_GetAnimator"},"_position":{"x":-849.009,"y":-79.55655},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"4"},{"_action":{"parameter":{"_value":"appearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},"_position":{"x":-667.3051,"y":-83.48395},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"5"},{"_action":{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},"_position":{"x":-431.494,"y":-84.31393},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"6"},{"_action":{"parameter":{"_value":"disappearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},"_position":{"x":-288.6348,"y":-82.35703},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"7"},{"_action":{"actions":[{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"minion":{"_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":-32.27191,"y":-88.22794},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"8"},{"_action":{"method":{"_baseInfo":"IBossController|Ready|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},"_position":{"x":239.5865,"y":-184.7015},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"9"},{"repeaterMode":2,"repeatTimes":{"_value":1},"_position":{"x":1728.748,"y":-266.3071},"$type":"NodeCanvas.BehaviourTrees.Repeater","$id":"10"},{"_position":{"x":1713.918,"y":-90.58818},"$type":"NodeCanvas.BehaviourTrees.StepIterator","$id":"11"},{"_position":{"x":-721.5134,"y":379.5779},"_comment":"tao khien","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"12"},{"_condition":{"variable":{"_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Conditions.CheckNull"},"_position":{"x":-812.8868,"y":594.4387},"$type":"NodeCanvas.BehaviourTrees.BinarySelector","$id":"13"},{"_position":{"x":-1631.948,"y":779.9752},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"14"},{"_action":{"time":3.0,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},"_position":{"x":-2335.669,"y":983.5895},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"15"},{"_action":{"actions":[{"minValue":{"_value":{"y":2.0}},"maxValue":{"_value":{"y":2.0}},"outputVariable":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"monsterPrefab":1,"position":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"parentGroup":{},"storedVariable":{"_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_SpawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":-2125.952,"y":986.0712},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"16"},{"_action":{"outputVariable":{"_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"overrideAgent":{"_type":"IEnemyController","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_GetAnimator"},"_position":{"x":-1682.138,"y":967.3196},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"17"},{"_action":{"parameter":{"_value":"appearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},"_position":{"x":-1503.522,"y":970.4094},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"18"},{"_action":{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},"_position":{"x":-1275.326,"y":989.8493},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"19"},{"_action":{"parameter":{"_value":"disappearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},"_position":{"x":-1132.466,"y":991.8054},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"20"},{"_action":{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},"_position":{"x":-894.1034,"y":989.9352},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"21"},{"_position":{"x":-421.7662,"y":719.4918},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"22"},{"_condition":{"_invert":true,"overrideAgent":{"_type":"UnityEngine.Transform","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Conditions.IsActive"},"_position":{"x":-641.6339,"y":798.0979},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"23"},{"_position":{"x":-436.6221,"y":974.1208},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"24"},{"_action":{"time":3.0,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},"_position":{"x":-1140.344,"y":1177.735},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"25"},{"_action":{"actions":[{"minValue":{"_value":{"y":2.0}},"maxValue":{"_value":{"y":2.0}},"outputVariable":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"monsterPrefab":1,"position":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"parentGroup":{},"storedVariable":{"_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_SpawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":-931.2896,"y":1167.272},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"26"},{"_action":{"outputVariable":{"_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"overrideAgent":{"_type":"IEnemyController","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_GetAnimator"},"_position":{"x":-486.812,"y":1161.465},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"27"},{"_action":{"parameter":{"_value":"appearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},"_position":{"x":-308.1964,"y":1164.555},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"28"},{"_action":{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},"_position":{"x":-80.00006,"y":1183.995},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"29"},{"_action":{"parameter":{"_value":"disappearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},"_position":{"x":62.85919,"y":1185.951},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"30"},{"_action":{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},"_position":{"x":301.2222,"y":1184.081},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"31"},{"_position":{"x":768.0685,"y":1407.951},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"32"},{"_condition":{"method":{"_baseInfo":"IBossController|get_ratioCurrentHp|System.Single","_paramsInfo":""},"checkValue":{"_type":"System.Single","_value":{"$content":0.75,"$type":"System.Single"}},"comparison":3,"$type":"NodeCanvas.Tasks.Conditions.CheckProperty_Multiplatform"},"_position":{"x":384.089,"y":1609.575},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"33"},{"_condition":{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Conditions.IsActive"},"_position":{"x":649.006,"y":1614.854},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"34"},{"policy":2,"_position":{"x":807.1218,"y":1947.928},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"35"},{"repeatTimes":{"_value":3},"_position":{"x":633.2617,"y":2151.786},"_comment":"so lan lappppp\nlaplalapplapalapa","$type":"NodeCanvas.BehaviourTrees.Repeater","$id":"36"},{"_position":{"x":323.9924,"y":2335.909},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"37"},{"_condition":{"method":{"_baseInfo":"IBossController|get_ratioCurrentHp|System.Single","_paramsInfo":""},"checkValue":{"_type":"System.Single","_value":{"$content":0.75,"$type":"System.Single"}},"comparison":3,"$type":"NodeCanvas.Tasks.Conditions.CheckProperty_Multiplatform"},"_position":{"x":-368.9117,"y":2393.087},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"38"},{"_action":{"actions":[{"mapDetail":{"_value":2},"$type":"NodeCanvas.Tasks.Actions.NC_GenerateWave"},{"waitTime":{"_value":3.5},"$type":"NodeCanvas.Tasks.Actions.Wait"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":-197.6832,"y":2565.654},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"39"},{"_condition":{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Conditions.IsActive"},"_position":{"x":717.9443,"y":2614.009},"$type":"NodeCanvas.BehaviourTrees.BinarySelector","$id":"40"},{"_position":{"x":544.3287,"y":2777.188},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"41"},{"_action":{"actions":[{"waitTime":{"_value":1.0},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.Wait"},{"xAxis":false,"storagedVariable":{"_name":"PC Position","_targetVariableID":"1b8b1deb-11cd-4588-9b9a-1cd4fe8cf3f4"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_GetPCPosition"},{"minValue":{"_value":{"y":-3.0}},"maxValue":{"_value":{"y":1.0}},"outputVariable":{"_name":"targetPosition","_targetVariableID":"d5109516-85b7-4144-bbe4-5d8f6aa88fec"},"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"monsterPrefab":3,"position":{"_name":"targetPosition","_targetVariableID":"d5109516-85b7-4144-bbe4-5d8f6aa88fec"},"parentGroup":{},"storedVariable":{"_name":"alert","_targetVariableID":"479bc472-f4f0-4d7c-914a-68a11cffff8f"},"$type":"NodeCanvas.Tasks.Actions.NC_SpawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":-7.045441,"y":3096.824},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"42"},{"_action":{"actions":[{"waitTime":{"_value":2.5},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.Wait"},{"time":2.5,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":443.7528,"y":3123.217},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"43"},{"_action":{"actions":[{"minion":{"_name":"alert","_targetVariableID":"479bc472-f4f0-4d7c-914a-68a11cffff8f"},"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"storagedVariable":{"_name":"targetPosition","_targetVariableID":"d5109516-85b7-4144-bbe4-5d8f6aa88fec"},"_isDisabled":true,"overrideAgent":{"_type":"UnityEngine.Transform","_name":"alert","_targetVariableID":"479bc472-f4f0-4d7c-914a-68a11cffff8f"},"$type":"NodeCanvas.Tasks.Actions.NC_GetVector3Position"},{"time":{"_value":-1.0},"speed":{"_value":0.5},"timeDelay":{},"curve":{"_value":{"keys":[{"time":0.0,"value":0.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0},{"time":1.0,"value":1.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0}],"preWrapMode":8,"postWrapMode":8}},"loopTimes":{"_value":1},"targetPosition":{"_name":"targetPosition","_targetVariableID":"d5109516-85b7-4144-bbe4-5d8f6aa88fec"},"overrideAgent":{"_type":"TransformBehaviour","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_MoveToward"},{"waitTime":{"_value":0.5},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.Wait"},{"parameter":{"_value":"appearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":670.8226,"y":3110.986},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"44"},{"_action":{"actions":[{"time":3.0,"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"waitTime":{"_value":2.5},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"parameter":{"_value":"disappearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},{"waitTime":{"_value":1.0},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.Wait"},{"minion":{"_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_SendFailureStatus"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":921.4365,"y":3113.164},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"45"},{"_position":{"x":991.9891,"y":2763.998},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"46"},{"repeaterMode":2,"repeatTimes":{"_value":3},"_position":{"x":815.9843,"y":2162.128},"$type":"NodeCanvas.BehaviourTrees.Repeater","$id":"47"},{"_action":{"actions":[{"minValue":{"_value":{"x":-2.0,"y":4.0}},"maxValue":{"_value":{"x":2.0,"y":4.0}},"outputVariable":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"moveType":1,"time":{"_value":0.5},"speed":{"_value":0.5},"timeDelay":{},"curve":{"_value":{"keys":[{"time":0.0,"value":0.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0},{"time":1.0,"value":1.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0}],"preWrapMode":8,"postWrapMode":8}},"loopTimes":{"_value":1},"targetPosition":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"$type":"NodeCanvas.Tasks.Actions.NC_MoveToward"},{"waitTime":{"_value":1.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":859.5718,"y":2318.18},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"48"},{"_position":{"x":2678.772,"y":670.0308},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"49"},{"_condition":{"method":{"_baseInfo":"IBossController|get_ratioCurrentHp|System.Single","_paramsInfo":""},"checkValue":{"_type":"System.Single","_value":{"$content":0.75,"$type":"System.Single"}},"comparison":2,"$type":"NodeCanvas.Tasks.Conditions.CheckProperty_Multiplatform"},"_position":{"x":1833.41,"y":845.5283},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"50"},{"_condition":{"method":{"_baseInfo":"IBossController|get_ratioCurrentHp|System.Single","_paramsInfo":""},"checkValue":{"_type":"System.Single","_value":{"$content":0.45,"$type":"System.Single"}},"comparison":3,"$type":"NodeCanvas.Tasks.Conditions.CheckProperty_Multiplatform"},"_position":{"x":2066.578,"y":911.7067},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"51"},{"_condition":{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Conditions.IsActive"},"_position":{"x":2371.455,"y":923.8022},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"52"},{"policy":2,"_position":{"x":2856.057,"y":998.4268},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"53"},{"repeatTimes":{"_value":3},"_position":{"x":2682.198,"y":1202.285},"_comment":"so lan lappppp\nlaplalapplapalapa","$type":"NodeCanvas.BehaviourTrees.Repeater","$id":"54"},{"_position":{"x":2372.928,"y":1386.408},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"55"},{"_condition":{"method":{"_baseInfo":"IBossController|get_ratioCurrentHp|System.Single","_paramsInfo":""},"checkValue":{"_type":"System.Single","_value":{"$content":0.45,"$type":"System.Single"}},"comparison":3,"$type":"NodeCanvas.Tasks.Conditions.CheckProperty_Multiplatform"},"_position":{"x":1917.868,"y":1487.936},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"56"},{"_action":{"actions":[{"mapDetail":{"_value":2},"$type":"NodeCanvas.Tasks.Actions.NC_GenerateWave"},{"waitTime":{"_value":3.5},"$type":"NodeCanvas.Tasks.Actions.Wait"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":1942.742,"y":1783.22},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"57"},{"_condition":{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Conditions.IsActive"},"_position":{"x":2902.875,"y":1664.508},"$type":"NodeCanvas.BehaviourTrees.BinarySelector","$id":"58"},{"_position":{"x":2729.259,"y":1827.687},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"59"},{"_position":{"x":3007.167,"y":2141.28},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"60"},{"_action":{"targetList":{"_name":"listPos","_targetVariableID":"e76d9051-6560-42a7-87ca-505e741a5b75"},"$type":"NodeCanvas.Tasks.Actions.ClearList"},"_position":{"x":1648.504,"y":2903.031},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"61"},{"random":true,"_position":{"x":1893.111,"y":2927.114},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"62"},{"_action":{"actions":[{"minValue":{"_value":{"y":1.0}},"maxValue":{"_value":{"y":1.0}},"outputVariable":{"_name":"randPos1","_targetVariableID":"6eff6ed5-905b-44e6-9797-77db9586747a"},"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"targetList":{"_name":"listPos","_targetVariableID":"e76d9051-6560-42a7-87ca-505e741a5b75"},"targetElement":{"_name":"randPos1","_targetVariableID":"6eff6ed5-905b-44e6-9797-77db9586747a"},"$type":"NodeCanvas.Tasks.Actions.AddElementToList`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":1672.35,"y":3395.243},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"63"},{"_action":{"actions":[{"minValue":{"_value":{"y":-2.0}},"maxValue":{"_value":{"y":-2.0}},"outputVariable":{"_name":"randPos2","_targetVariableID":"293159bf-e332-4ded-a8c4-a411e996049e"},"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"targetList":{"_name":"listPos","_targetVariableID":"e76d9051-6560-42a7-87ca-505e741a5b75"},"targetElement":{"_name":"randPos2","_targetVariableID":"293159bf-e332-4ded-a8c4-a411e996049e"},"$type":"NodeCanvas.Tasks.Actions.AddElementToList`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":1909.089,"y":3399.701},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"64"},{"_action":{"actions":[{"minValue":{"_value":{"y":-4.0}},"maxValue":{"_value":{"y":-4.0}},"outputVariable":{"_name":"randPos3","_targetVariableID":"c4cdf635-e805-4a2c-a868-7bcaf75ff54a"},"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"targetList":{"_name":"listPos","_targetVariableID":"e76d9051-6560-42a7-87ca-505e741a5b75"},"targetElement":{"_name":"randPos3","_targetVariableID":"c4cdf635-e805-4a2c-a868-7bcaf75ff54a"},"$type":"NodeCanvas.Tasks.Actions.AddElementToList`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":2136.929,"y":3397.702},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"65"},{"_position":{"x":2619.945,"y":2789.099},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"66"},{"_action":{"actions":[{"targetList":{"_name":"listPos","_targetVariableID":"e76d9051-6560-42a7-87ca-505e741a5b75"},"index":{},"saveAs":{"_name":"randPos1","_targetVariableID":"6eff6ed5-905b-44e6-9797-77db9586747a"},"$type":"NodeCanvas.Tasks.Actions.PickListElement`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"minValue":{},"maxValue":{},"outputVariable":{"_name":"randPos1","_targetVariableID":"6eff6ed5-905b-44e6-9797-77db9586747a"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"monsterPrefab":3,"position":{"_name":"randPos1","_targetVariableID":"6eff6ed5-905b-44e6-9797-77db9586747a"},"parentGroup":{},"storedVariable":{"_name":"alert1","_targetVariableID":"cd3183e6-7b22-43c4-9922-04f9121338ac"},"$type":"NodeCanvas.Tasks.Actions.NC_SpawnMinion"},{"type":1,"time":1.0,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert1","_targetVariableID":"cd3183e6-7b22-43c4-9922-04f9121338ac"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":2405.168,"y":3255.223},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"67"},{"_action":{"actions":[{"targetList":{"_name":"listPos","_targetVariableID":"e76d9051-6560-42a7-87ca-505e741a5b75"},"index":{"_value":1},"saveAs":{"_name":"randPos2","_targetVariableID":"293159bf-e332-4ded-a8c4-a411e996049e"},"$type":"NodeCanvas.Tasks.Actions.PickListElement`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"minValue":{"_value":{"y":-2.0}},"maxValue":{"_value":{"y":-2.0}},"outputVariable":{"_name":"randPos2","_targetVariableID":"293159bf-e332-4ded-a8c4-a411e996049e"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"monsterPrefab":3,"position":{"_name":"randPos2","_targetVariableID":"293159bf-e332-4ded-a8c4-a411e996049e"},"parentGroup":{},"storedVariable":{"_name":"alert2","_targetVariableID":"d8e4be05-51ae-4df2-a4cb-f72db41d1d78"},"$type":"NodeCanvas.Tasks.Actions.NC_SpawnMinion"},{"type":1,"time":1.0,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert2","_targetVariableID":"d8e4be05-51ae-4df2-a4cb-f72db41d1d78"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":2501.267,"y":3397.466},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"68"},{"_action":{"actions":[{"targetList":{"_name":"listPos","_targetVariableID":"e76d9051-6560-42a7-87ca-505e741a5b75"},"index":{"_value":2},"saveAs":{"_name":"randPos3","_targetVariableID":"c4cdf635-e805-4a2c-a868-7bcaf75ff54a"},"$type":"NodeCanvas.Tasks.Actions.PickListElement`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"minValue":{"_value":{"y":-4.0}},"maxValue":{"_value":{"y":-4.0}},"outputVariable":{"_name":"randPos3","_targetVariableID":"c4cdf635-e805-4a2c-a868-7bcaf75ff54a"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"monsterPrefab":3,"position":{"_name":"randPos3","_targetVariableID":"c4cdf635-e805-4a2c-a868-7bcaf75ff54a"},"parentGroup":{},"storedVariable":{"_name":"alert3","_targetVariableID":"f09faa74-f5ff-40ec-ae8a-ce381e48db28"},"$type":"NodeCanvas.Tasks.Actions.NC_SpawnMinion"},{"type":1,"time":1.0,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert3","_targetVariableID":"f09faa74-f5ff-40ec-ae8a-ce381e48db28"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":2821.301,"y":3289.452},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"69"},{"_action":{"actions":[{"time":3.0,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert1","_targetVariableID":"cd3183e6-7b22-43c4-9922-04f9121338ac"},"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"time":0.3,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert2","_targetVariableID":"d8e4be05-51ae-4df2-a4cb-f72db41d1d78"},"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"time":0.3,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert3","_targetVariableID":"f09faa74-f5ff-40ec-ae8a-ce381e48db28"},"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":3029.647,"y":2993.903},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"70"},{"_position":{"x":3616.163,"y":3068.349},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"71"},{"_condition":{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Conditions.IsActive"},"_position":{"x":3480.744,"y":3153.47},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"72"},{"_action":{"actions":[{"time":2.0,"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"parameter":{"_value":"disappearance"},"parameterHashID":{},"_isDisabled":true,"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},{"time":3.0,"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert1","_targetVariableID":"cd3183e6-7b22-43c4-9922-04f9121338ac"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"time":{"_value":-1.0},"speed":{"_value":0.5},"timeDelay":{},"curve":{"_value":{"keys":[{"time":0.0,"value":0.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0},{"time":1.0,"value":1.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0}],"preWrapMode":8,"postWrapMode":8}},"loopTimes":{"_value":1},"targetPosition":{"_name":"randPos1","_targetVariableID":"6eff6ed5-905b-44e6-9797-77db9586747a"},"overrideAgent":{"_type":"TransformBehaviour","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_MoveToward"},{"parameter":{"_value":"appearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},{"type":1,"time":3.0,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":3601.027,"y":3264.121},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"73"},{"_position":{"x":4066.148,"y":3086.37},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"74"},{"_condition":{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Conditions.IsActive"},"_position":{"x":3930.729,"y":3171.492},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"75"},{"_action":{"actions":[{"time":2.0,"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"parameter":{"_value":"disappearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},{"type":1,"time":3.0,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert2","_targetVariableID":"d8e4be05-51ae-4df2-a4cb-f72db41d1d78"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"time":{"_value":-1.0},"speed":{"_value":0.5},"timeDelay":{},"curve":{"_value":{"keys":[{"time":0.0,"value":0.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0},{"time":1.0,"value":1.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0}],"preWrapMode":8,"postWrapMode":8}},"loopTimes":{"_value":1},"targetPosition":{"_name":"randPos2","_targetVariableID":"293159bf-e332-4ded-a8c4-a411e996049e"},"overrideAgent":{"_type":"TransformBehaviour","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_MoveToward"},{"parameter":{"_value":"appearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},{"type":1,"time":3.0,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":4051.014,"y":3282.144},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"76"},{"_position":{"x":4450.565,"y":3050.822},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"77"},{"_condition":{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Conditions.IsActive"},"_position":{"x":4315.146,"y":3135.945},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"78"},{"_action":{"actions":[{"time":2.0,"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"parameter":{"_value":"disappearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},{"type":1,"time":3.0,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert3","_targetVariableID":"f09faa74-f5ff-40ec-ae8a-ce381e48db28"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"time":{"_value":-1.0},"speed":{"_value":0.5},"timeDelay":{},"curve":{"_value":{"keys":[{"time":0.0,"value":0.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0},{"time":1.0,"value":1.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0}],"preWrapMode":8,"postWrapMode":8}},"loopTimes":{"_value":1},"targetPosition":{"_name":"randPos3","_targetVariableID":"c4cdf635-e805-4a2c-a868-7bcaf75ff54a"},"overrideAgent":{"_type":"TransformBehaviour","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_MoveToward"},{"parameter":{"_value":"appearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},{"time":3.0,"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":4435.43,"y":3246.595},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"79"},{"_action":{"actions":[{"parameter":{"_value":"disappearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},{"time":2.0,"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":4946.929,"y":2787.384},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"80"},{"_position":{"x":3176.919,"y":1814.497},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"81"},{"repeaterMode":2,"repeatTimes":{"_value":3},"_position":{"x":3139.388,"y":1232.516},"$type":"NodeCanvas.BehaviourTrees.Repeater","$id":"82"},{"_action":{"actions":[{"minValue":{"_value":{"x":-2.0,"y":4.0}},"maxValue":{"_value":{"x":2.0,"y":4.0}},"outputVariable":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"moveType":1,"time":{"_value":0.5},"speed":{"_value":0.5},"timeDelay":{},"curve":{"_value":{"keys":[{"time":0.0,"value":0.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0},{"time":1.0,"value":1.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0}],"preWrapMode":8,"postWrapMode":8}},"loopTimes":{"_value":1},"targetPosition":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"$type":"NodeCanvas.Tasks.Actions.NC_MoveToward"},{"waitTime":{"_value":1.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":3182.975,"y":1388.568},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"83"},{"_position":{"x":6179.956,"y":848.1168},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"84"},{"_condition":{"method":{"_baseInfo":"IBossController|get_ratioCurrentHp|System.Single","_paramsInfo":""},"checkValue":{"_type":"System.Single","_value":{"$content":0.45,"$type":"System.Single"}},"comparison":2,"$type":"NodeCanvas.Tasks.Conditions.CheckProperty_Multiplatform"},"_position":{"x":5918.544,"y":957.2708},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"85"},{"_condition":{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Conditions.IsActive"},"_position":{"x":6128.606,"y":965.9948},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"86"},{"_position":{"x":6448.127,"y":1007.813},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"87"},{"repeaterMode":2,"repeatTimes":{"_value":3},"_position":{"x":6299.224,"y":1139.569},"$type":"NodeCanvas.BehaviourTrees.Repeater","$id":"88"},{"_position":{"x":6242.289,"y":1261.007},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"89"},{"_condition":{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Conditions.IsActive"},"_position":{"x":5499.835,"y":1543.994},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"90"},{"_action":{"actions":[{"waitTime":{"_value":1.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"xAxis":false,"storagedVariable":{"_name":"PC Position","_targetVariableID":"1b8b1deb-11cd-4588-9b9a-1cd4fe8cf3f4"},"$type":"NodeCanvas.Tasks.Actions.NC_GetPCPosition"},{"monsterPrefab":3,"position":{"_name":"PC Position","_targetVariableID":"1b8b1deb-11cd-4588-9b9a-1cd4fe8cf3f4"},"parentGroup":{},"storedVariable":{"_name":"alert","_targetVariableID":"479bc472-f4f0-4d7c-914a-68a11cffff8f"},"$type":"NodeCanvas.Tasks.Actions.NC_SpawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5700.915,"y":1528.642},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"91"},{"policy":2,"_position":{"x":6207.313,"y":1519.868},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"92"},{"_action":{"speed":{"_value":3.3},"timeDelay":{},"targetTransform":{},"x":{},"y":{"_value":true},"overrideAgent":{"_type":"TransformBehaviour","_name":"alert","_targetVariableID":"479bc472-f4f0-4d7c-914a-68a11cffff8f"},"$type":"NodeCanvas.Tasks.Actions.NC_Follow"},"_position":{"x":6136.377,"y":1674.494},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"93"},{"_action":{"waitTime":{"_value":1.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},"_position":{"x":6309.586,"y":1696.493},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"94"},{"_action":{"waitTime":{"_value":2.5},"$type":"NodeCanvas.Tasks.Actions.Wait"},"_position":{"x":6510.206,"y":1696.357},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"95"},{"_action":{"actions":[{"minion":{"_name":"alert","_targetVariableID":"479bc472-f4f0-4d7c-914a-68a11cffff8f"},"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"storagedVariable":{"_name":"targetPosition","_targetVariableID":"d5109516-85b7-4144-bbe4-5d8f6aa88fec"},"overrideAgent":{"_type":"UnityEngine.Transform","_name":"alert","_targetVariableID":"479bc472-f4f0-4d7c-914a-68a11cffff8f"},"$type":"NodeCanvas.Tasks.Actions.NC_GetVector3Position"},{"time":{"_value":-1.0},"speed":{"_value":0.5},"timeDelay":{},"curve":{"_value":{"keys":[{"time":0.0,"value":0.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0},{"time":1.0,"value":1.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0}],"preWrapMode":8,"postWrapMode":8}},"loopTimes":{"_value":1},"targetPosition":{"_name":"targetPosition","_targetVariableID":"d5109516-85b7-4144-bbe4-5d8f6aa88fec"},"overrideAgent":{"_type":"TransformBehaviour","_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_MoveToward"},{"waitTime":{"_value":0.5},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"parameter":{"_value":"appearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":6719.844,"y":1692.678},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"96"},{"_action":{"actions":[{"waitTime":{"_value":3.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"parameter":{"_value":"disappearance"},"parameterHashID":{},"overrideAgent":{"_type":"UnityEngine.Animator","_name":"shield animator","_targetVariableID":"ce2a24e0-534e-4dcd-8b75-2d32183d3a97"},"$type":"NodeCanvas.Tasks.Actions.MecanimSetTrigger"},{"waitTime":{"_value":1.0},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.Wait"},{"minion":{"_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"$type":"NodeCanvas.Tasks.Actions.NC_SendFailureStatus"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":7026.942,"y":1695.647},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"97"},{"repeaterMode":2,"repeatTimes":{"_value":3},"_position":{"x":6493.947,"y":1219.911},"$type":"NodeCanvas.BehaviourTrees.Repeater","$id":"98"},{"_action":{"actions":[{"minValue":{"_value":{"x":-2.0,"y":4.0}},"maxValue":{"_value":{"x":2.0,"y":4.0}},"outputVariable":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"$type":"NodeCanvas.Tasks.Actions.SetVector3Random"},{"moveType":1,"time":{"_value":0.5},"speed":{"_value":0.5},"timeDelay":{},"curve":{"_value":{"keys":[{"time":0.0,"value":0.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0},{"time":1.0,"value":1.0,"tangentMode":0,"inTangent":0.0,"outTangent":0.0}],"preWrapMode":8,"postWrapMode":8}},"loopTimes":{"_value":1},"targetPosition":{"_name":"random pos","_targetVariableID":"05b16afa-f548-4973-b61a-f99f594c755e"},"$type":"NodeCanvas.Tasks.Actions.NC_MoveToward"},{"waitTime":{"_value":1.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":6525.534,"y":1305.963},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"99"},{"_position":{"x":6703.473,"y":1081.723},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"100"},{"repeatTimes":{"_value":40},"_position":{"x":6700.91,"y":1171.421},"$type":"NodeCanvas.BehaviourTrees.Repeater","$id":"101"},{"_position":{"x":6916.129,"y":1238.246},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"102"},{"_action":{"actions":[{"mapDetail":{"_value":2},"duration":4.5,"$type":"NodeCanvas.Tasks.Actions.NC_GenerateWave"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":6780.299,"y":1299.348},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"103"},{"_action":{"actions":[{"waitTime":{"_value":1.0},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.Wait"},{"minion":{"_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"$type":"NodeCanvas.Tasks.Actions.NC_SendFailureStatus"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":7137.007,"y":1127.899},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"104"},{"_action":{"actions":[{"waitTime":{"_value":1.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"minion":{"_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":6748.464,"y":889.6577},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"105"},{"_position":{"x":7591.807,"y":545.9813},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"106"},{"_action":{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},"_position":{"x":7571.807,"y":639.9813},"_comment":"cho khien bien mat","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"107"},{"_action":{"minion":{"_name":"shield","_targetVariableID":"4756969f-b844-4f5d-97ee-740bf9c75f30"},"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},"_position":{"x":7694.161,"y":641.8235},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"108"},{"_action":{"actions":[{"time":1.0,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert1","_targetVariableID":"cd3183e6-7b22-43c4-9922-04f9121338ac"},"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"time":0.3,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert2","_targetVariableID":"d8e4be05-51ae-4df2-a4cb-f72db41d1d78"},"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"},{"time":0.3,"$type":"NodeCanvas.Tasks.Actions.NC_WaitForSecondsWithMyAtkLvl"},{"minion":{"_name":"alert3","_targetVariableID":"f09faa74-f5ff-40ec-ae8a-ce381e48db28"},"$type":"NodeCanvas.Tasks.Actions.NC_DespawnMinion"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":-990.166,"y":4423.858},"$type":"NodeCanvas.BehaviourTrees.ActionNode"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"49"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"84"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"106"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"14"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"22"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"17"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"18"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"22"},"_targetNode":{"$ref":"23"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"22"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"25"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"29"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"30"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"33"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"34"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"35"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"35"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"35"},"_targetNode":{"$ref":"47"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"36"},"_targetNode":{"$ref":"37"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"37"},"_targetNode":{"$ref":"38"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"37"},"_targetNode":{"$ref":"39"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"37"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"41"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"46"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"41"},"_targetNode":{"$ref":"42"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"41"},"_targetNode":{"$ref":"43"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"41"},"_targetNode":{"$ref":"44"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"41"},"_targetNode":{"$ref":"45"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"48"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"49"},"_targetNode":{"$ref":"50"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"49"},"_targetNode":{"$ref":"51"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"49"},"_targetNode":{"$ref":"52"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"49"},"_targetNode":{"$ref":"53"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"53"},"_targetNode":{"$ref":"54"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"53"},"_targetNode":{"$ref":"82"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"54"},"_targetNode":{"$ref":"55"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"55"},"_targetNode":{"$ref":"56"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"55"},"_targetNode":{"$ref":"57"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"55"},"_targetNode":{"$ref":"58"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"58"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"58"},"_targetNode":{"$ref":"81"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"59"},"_targetNode":{"$ref":"60"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"60"},"_targetNode":{"$ref":"61"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"60"},"_targetNode":{"$ref":"62"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"60"},"_targetNode":{"$ref":"66"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"60"},"_targetNode":{"$ref":"70"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"60"},"_targetNode":{"$ref":"71"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"60"},"_targetNode":{"$ref":"74"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"60"},"_targetNode":{"$ref":"77"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"60"},"_targetNode":{"$ref":"80"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"62"},"_targetNode":{"$ref":"63"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"62"},"_targetNode":{"$ref":"64"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"62"},"_targetNode":{"$ref":"65"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"66"},"_targetNode":{"$ref":"67"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"66"},"_targetNode":{"$ref":"68"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"66"},"_targetNode":{"$ref":"69"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"71"},"_targetNode":{"$ref":"72"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"71"},"_targetNode":{"$ref":"73"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"74"},"_targetNode":{"$ref":"75"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"74"},"_targetNode":{"$ref":"76"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"77"},"_targetNode":{"$ref":"78"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"77"},"_targetNode":{"$ref":"79"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"82"},"_targetNode":{"$ref":"83"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"84"},"_targetNode":{"$ref":"85"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"84"},"_targetNode":{"$ref":"86"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"84"},"_targetNode":{"$ref":"87"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"84"},"_targetNode":{"$ref":"105"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"87"},"_targetNode":{"$ref":"88"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"87"},"_targetNode":{"$ref":"98"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"87"},"_targetNode":{"$ref":"100"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"88"},"_targetNode":{"$ref":"89"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"89"},"_targetNode":{"$ref":"90"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"89"},"_targetNode":{"$ref":"91"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"89"},"_targetNode":{"$ref":"92"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"89"},"_targetNode":{"$ref":"95"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"89"},"_targetNode":{"$ref":"96"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"89"},"_targetNode":{"$ref":"97"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"92"},"_targetNode":{"$ref":"93"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"92"},"_targetNode":{"$ref":"94"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"98"},"_targetNode":{"$ref":"99"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"100"},"_targetNode":{"$ref":"101"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"100"},"_targetNode":{"$ref":"104"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"101"},"_targetNode":{"$ref":"102"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"102"},"_targetNode":{"$ref":"103"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"106"},"_targetNode":{"$ref":"107"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"106"},"_targetNode":{"$ref":"108"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _boundGraphObjectReferences:
+  - {fileID: 0}
+  - {fileID: 114213704010675277, guid: c7e814c3bbb355d489d6f2ef87737bd7, type: 2}
+  - {fileID: 11400000, guid: 2f52e700ce63fab4c8e314a67d57af98, type: 2}
+  - {fileID: 114569849210747934, guid: d80b9b9943941484294e5e1b6306efcf, type: 2}
+  _boundGraphSource:
+    _version: 3.21
+    _category:
+    _comments:
+    _translation: {x: -628, y: 127}
+    _zoomFactor: 0.25000757
+  _firstActivation: 0
+  _enableAction: 1
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 0}
+  _blackboard: {fileID: 114905116793130740}
+--- !u!1 &1122835611431430
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4958456144806036}
+  - component: {fileID: 114183393204798130}
+  - component: {fileID: 58925455422704229}
+  - component: {fileID: 95669571721620416}
+  m_Layer: 8
+  m_Name: Boss05
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4958456144806036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122835611431430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4480279467826736}
+  - {fileID: 4843449507263144}
+  m_Father: {fileID: 4958028844015281}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114183393204798130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122835611431430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7934229765cc02a2946eb23d01648aa8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  mecanim: {fileID: 95669571721620416}
+  particleCharge: {fileID: 198846784692457953}
+  holderGun: {fileID: 4843449507263144}
+--- !u!58 &58925455422704229
+CircleCollider2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122835611431430}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.8
+--- !u!95 &95669571721620416
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122835611431430}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e916ab4f7129d3e4a9c37a0f52f13306, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage:
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1339620859407384
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4480279467826736}
+  m_Layer: 0
+  m_Name: HoldContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4480279467826736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339620859407384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4100351665303672}
+  - {fileID: 4792762774575242}
+  m_Father: {fileID: 4958456144806036}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1199073620988269
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4100351665303672}
+  m_Layer: 0
+  m_Name: Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4100351665303672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199073620988269}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4756875824373146}
+  - {fileID: 4789060217026590}
+  - {fileID: 4259689006326960}
+  m_Father: {fileID: 4480279467826736}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1941247163696989
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4756875824373146}
+  m_Layer: 0
+  m_Name: HoldHeadGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4756875824373146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941247163696989}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4866242718597975}
+  - {fileID: 4179913791162672}
+  m_Father: {fileID: 4100351665303672}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1139834846375053
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4866242718597975}
+  m_Layer: 0
+  m_Name: HoldHeadA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4866242718597975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139834846375053}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4967247694752709}
+  m_Father: {fileID: 4756875824373146}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1669956041180906
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4967247694752709}
+  - component: {fileID: 212134263503044683}
+  m_Layer: 0
+  m_Name: HeadA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4967247694752709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669956041180906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4866242718597975}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212134263503044683
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669956041180906}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7204a877c641a2c48a4e5971ad7772f0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1697167459
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6983f5d09cd48534d9daf808f49dba46, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1847295997968272
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4179913791162672}
+  m_Layer: 0
+  m_Name: HoldHeadB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4179913791162672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847295997968272}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4184122121239346}
+  m_Father: {fileID: 4756875824373146}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1821535869182033
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4184122121239346}
+  - component: {fileID: 212068464272082046}
+  m_Layer: 0
+  m_Name: HeadB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4184122121239346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821535869182033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4179913791162672}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212068464272082046
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821535869182033}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7204a877c641a2c48a4e5971ad7772f0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1697167459
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6983f5d09cd48534d9daf808f49dba46, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1627159694263752
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4789060217026590}
+  m_Layer: 0
+  m_Name: HoldWingGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4789060217026590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627159694263752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.61, z: 0.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4931158735346701}
+  - {fileID: 4028448883365221}
+  m_Father: {fileID: 4100351665303672}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1563819523142737
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4931158735346701}
+  m_Layer: 0
+  m_Name: HoldWingA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4931158735346701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563819523142737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4411482800402373}
+  m_Father: {fileID: 4789060217026590}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1158582789112544
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4411482800402373}
+  - component: {fileID: 212604081752585254}
+  m_Layer: 0
+  m_Name: WingA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4411482800402373
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158582789112544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4931158735346701}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212604081752585254
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158582789112544}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7204a877c641a2c48a4e5971ad7772f0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1697167459
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6fae0dcd2cc42914fbaea243babd8044, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1361680820170922
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4028448883365221}
+  m_Layer: 0
+  m_Name: HoldWingB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4028448883365221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361680820170922}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4463839280280074}
+  m_Father: {fileID: 4789060217026590}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1247286823987009
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4463839280280074}
+  - component: {fileID: 212798079828787904}
+  m_Layer: 0
+  m_Name: WingB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4463839280280074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247286823987009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4028448883365221}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212798079828787904
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247286823987009}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7204a877c641a2c48a4e5971ad7772f0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1697167459
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6fae0dcd2cc42914fbaea243babd8044, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1445834144454787
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4259689006326960}
+  m_Layer: 0
+  m_Name: HoldHandGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4259689006326960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445834144454787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.08, z: 0.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4723395026035682}
+  - {fileID: 4666611703521011}
+  m_Father: {fileID: 4100351665303672}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1356096084711935
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4723395026035682}
+  m_Layer: 0
+  m_Name: HoldHandA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4723395026035682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356096084711935}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4434854040281101}
+  m_Father: {fileID: 4259689006326960}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1081827705174309
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4434854040281101}
+  - component: {fileID: 212925914533036103}
+  m_Layer: 0
+  m_Name: HandA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4434854040281101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081827705174309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4723395026035682}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212925914533036103
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081827705174309}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7204a877c641a2c48a4e5971ad7772f0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1697167459
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 322e76bd36322bf439e123c0458f33bd, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1669799687168437
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4666611703521011}
+  m_Layer: 0
+  m_Name: HoldHandB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4666611703521011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669799687168437}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.7, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4308672144150420}
+  m_Father: {fileID: 4259689006326960}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1089146585040681
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4308672144150420}
+  - component: {fileID: 212302341024441374}
+  m_Layer: 0
+  m_Name: HandB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4308672144150420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089146585040681}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4666611703521011}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!212 &212302341024441374
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089146585040681}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7204a877c641a2c48a4e5971ad7772f0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1697167459
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 322e76bd36322bf439e123c0458f33bd, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1548289741357400
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4792762774575242}
+  - component: {fileID: 198846784692457953}
+  - component: {fileID: 199742869386067132}
+  m_Layer: 0
+  m_Name: ParticleCharge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4792762774575242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548289741357400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4480279467826736}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &198846784692457953
+ParticleSystem:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548289741357400}
+  lengthInSec: 5
+  simulationSpeed: 1
+  stopAction: 0
+  cullingMode: 3
+  ringBufferMode: 0
+  ringBufferLoopRange: {x: 0, y: 1}
+  emitterVelocityMode: 0
+  looping: 1
+  prewarm: 0
+  playOnAwake: 1
+  useUnscaledTime: 0
+  autoRandomSeed: 1
+  startDelay:
+    serializedVersion: 2
+    minMaxState: 0
+    scalar: 0
+    minScalar: 0
+    maxCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  moveWithTransform: 0
+  moveWithCustomTransform: {fileID: 0}
+  scalingMode: 1
+  randomSeed: 0
+  InitialModule:
+    serializedVersion: 3
+    enabled: 1
+    startLifetime:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0.55
+      minScalar: 5
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startSpeed:
+      serializedVersion: 2
+      minMaxState: 3
+      scalar: -6
+      minScalar: -4
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startColor:
+      serializedVersion: 2
+      minMaxState: 0
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.7921569, g: 0.3882353, b: 0.20392157, a: 0.7529412}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+    startSize:
+      serializedVersion: 2
+      minMaxState: 3
+      scalar: 2
+      minScalar: 0.1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startSizeY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startSizeZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startRotationX:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startRotationY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startRotation:
+      serializedVersion: 2
+      minMaxState: 3
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    randomizeRotationDirection: 0
+    maxNumParticles: 1000
+    customEmitterVelocity: {x: 0, y: 0, z: 0}
+    size3D: 0
+    rotation3D: 0
+    gravityModifier:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  ShapeModule:
+    serializedVersion: 6
+    enabled: 1
+    type: 10
+    angle: 25
+    length: 5
+    boxThickness: {x: 0, y: 0, z: 0}
+    radiusThickness: 0
+    donutRadius: 0.2
+    m_Position: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0}
+    m_Scale: {x: 1, y: 1, z: 1}
+    placementMode: 0
+    m_MeshMaterialIndex: 0
+    m_MeshNormalOffset: 0
+    m_MeshSpawn:
+      mode: 0
+      spread: 0
+      speed:
+        serializedVersion: 2
+        minMaxState: 0
+        scalar: 1
+        minScalar: 1
+        maxCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        minCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    m_Mesh: {fileID: 0}
+    m_MeshRenderer: {fileID: 0}
+    m_SkinnedMeshRenderer: {fileID: 0}
+    m_Sprite: {fileID: 0}
+    m_SpriteRenderer: {fileID: 0}
+    m_UseMeshMaterialIndex: 0
+    m_UseMeshColors: 1
+    alignToDirection: 0
+    m_Texture: {fileID: 0}
+    m_TextureClipChannel: 3
+    m_TextureClipThreshold: 0
+    m_TextureUVChannel: 0
+    m_TextureColorAffectsParticles: 1
+    m_TextureAlphaAffectsParticles: 1
+    m_TextureBilinearFiltering: 0
+    randomDirectionAmount: 0
+    sphericalDirectionAmount: 0
+    randomPositionAmount: 0
+    radius:
+      value: 3
+      mode: 0
+      spread: 0
+      speed:
+        serializedVersion: 2
+        minMaxState: 0
+        scalar: 1
+        minScalar: 1
+        maxCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        minCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    arc:
+      value: 360
+      mode: 0
+      spread: 0
+      speed:
+        serializedVersion: 2
+        minMaxState: 0
+        scalar: 1
+        minScalar: 1
+        maxCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        minCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+  EmissionModule:
+    serializedVersion: 4
+    enabled: 1
+    rateOverTime:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 100
+      minScalar: 10
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    rateOverDistance:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    m_BurstCount: 0
+    m_Bursts: []
+  SizeModule:
+    enabled: 1
+    curve:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: -2
+          outSlope: -2
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    z:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    separateAxes: 0
+  RotationModule:
+    enabled: 0
+    x:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    curve:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0.7853982
+      minScalar: 0.7853982
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    separateAxes: 0
+  ColorModule:
+    enabled: 1
+    gradient:
+      serializedVersion: 2
+      minMaxState: 1
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 0}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 1}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 11565
+        atime2: 48573
+        atime3: 65535
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 4
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+  UVModule:
+    serializedVersion: 2
+    enabled: 0
+    mode: 0
+    timeMode: 0
+    fps: 30
+    frameOverTime:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 0.9999
+      minScalar: 0.9999
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startFrame:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    speedRange: {x: 0, y: 1}
+    tilesX: 1
+    tilesY: 1
+    animationType: 0
+    rowIndex: 0
+    cycles: 1
+    uvChannelMask: -1
+    rowMode: 1
+    sprites:
+    - sprite: {fileID: 0}
+    flipU: 0
+    flipV: 0
+  VelocityModule:
+    enabled: 0
+    x:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    z:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalX:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetX:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    radial:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    speedModifier:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    inWorldSpace: 0
+  InheritVelocityModule:
+    enabled: 0
+    m_Mode: 0
+    m_Curve:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  LifetimeByEmitterSpeedModule:
+    enabled: 0
+    m_Curve:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: -0.8
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0.2
+          inSlope: -0.8
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    m_Range: {x: 0, y: 1}
+  ForceModule:
+    enabled: 0
+    x:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    z:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    inWorldSpace: 0
+    randomizePerFrame: 0
+  ExternalForcesModule:
+    serializedVersion: 2
+    enabled: 0
+    multiplierCurve:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    influenceFilter: 0
+    influenceMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    influenceList: []
+  ClampVelocityModule:
+    enabled: 0
+    x:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    z:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    magnitude:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    separateAxis: 0
+    inWorldSpace: 0
+    multiplyDragByParticleSize: 1
+    multiplyDragByParticleVelocity: 1
+    dampen: 1
+    drag:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  NoiseModule:
+    enabled: 0
+    strength:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    strengthY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    strengthZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    separateAxes: 0
+    frequency: 0.5
+    damping: 1
+    octaves: 1
+    octaveMultiplier: 0.5
+    octaveScale: 2
+    quality: 2
+    scrollSpeed:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    remap:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    remapY:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    remapZ:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    remapEnabled: 0
+    positionAmount:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    rotationAmount:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    sizeAmount:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  SizeBySpeedModule:
+    enabled: 0
+    curve:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    z:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    range: {x: 0, y: 1}
+    separateAxes: 0
+  RotationBySpeedModule:
+    enabled: 0
+    x:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    curve:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0.7853982
+      minScalar: 0.7853982
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    separateAxes: 0
+    range: {x: 0, y: 1}
+  ColorBySpeedModule:
+    enabled: 0
+    gradient:
+      serializedVersion: 2
+      minMaxState: 1
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+    range: {x: 0, y: 1}
+  CollisionModule:
+    serializedVersion: 4
+    enabled: 0
+    type: 0
+    collisionMode: 0
+    colliderForce: 0
+    multiplyColliderForceByParticleSize: 0
+    multiplyColliderForceByParticleSpeed: 0
+    multiplyColliderForceByCollisionAngle: 1
+    m_Planes:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    m_Dampen:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    m_Bounce:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    m_EnergyLossOnCollision:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    minKillSpeed: 0
+    maxKillSpeed: 10000
+    radiusScale: 1
+    collidesWith:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    maxCollisionShapes: 256
+    quality: 0
+    voxelSize: 0.5
+    collisionMessages: 0
+    collidesWithDynamic: 1
+    interiorCollisions: 1
+  TriggerModule:
+    serializedVersion: 2
+    enabled: 0
+    inside: 1
+    outside: 0
+    enter: 0
+    exit: 0
+    colliderQueryMode: 0
+    radiusScale: 1
+    primitives:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  SubModule:
+    serializedVersion: 2
+    enabled: 0
+    subEmitters:
+    - serializedVersion: 3
+      emitter: {fileID: 0}
+      type: 0
+      properties: 0
+      emitProbability: 1
+  LightsModule:
+    enabled: 0
+    ratio: 0
+    light: {fileID: 0}
+    randomDistribution: 1
+    color: 1
+    range: 1
+    intensity: 1
+    rangeCurve:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    intensityCurve:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    maxLights: 20
+  TrailModule:
+    enabled: 0
+    mode: 0
+    ratio: 1
+    lifetime:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    minVertexDistance: 0.2
+    textureMode: 0
+    ribbonCount: 1
+    shadowBias: 0.5
+    worldSpace: 0
+    dieWithParticles: 1
+    sizeAffectsWidth: 1
+    sizeAffectsLifetime: 0
+    inheritParticleColor: 1
+    generateLightingData: 0
+    splitSubEmitterRibbons: 0
+    attachRibbonsToTransform: 0
+    colorOverLifetime:
+      serializedVersion: 2
+      minMaxState: 0
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+    widthOverTrail:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    colorOverTrail:
+      serializedVersion: 2
+      minMaxState: 0
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+  CustomDataModule:
+    enabled: 0
+    mode0: 0
+    vectorComponentCount0: 4
+    color0:
+      serializedVersion: 2
+      minMaxState: 0
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+    colorLabel0:
+    vector0_0:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel0_0:
+    vector0_1:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel0_1:
+    vector0_2:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel0_2:
+    vector0_3:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel0_3:
+    mode1: 0
+    vectorComponentCount1: 4
+    color1:
+      serializedVersion: 2
+      minMaxState: 0
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+    colorLabel1:
+    vector1_0:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel1_0:
+    vector1_1:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel1_1:
+    vector1_2:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel1_2:
+    vector1_3:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel1_3:
+--- !u!199 &199742869386067132
+ParticleSystemRenderer:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548289741357400}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ddfc5e9335752084680cb23f708f8e14, type: 2}
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 130975171
+  m_SortingLayer: 10
+  m_SortingOrder: 0
+  m_RenderMode: 1
+  m_MeshDistribution: 0
+  m_SortMode: 0
+  m_MinParticleSize: 0
+  m_MaxParticleSize: 0.5
+  m_CameraVelocityScale: 0
+  m_VelocityScale: 0
+  m_LengthScale: 2
+  m_SortingFudge: 0
+  m_NormalDirection: 1
+  m_ShadowBias: 0
+  m_RenderAlignment: 0
+  m_Pivot: {x: 0, y: 0, z: 0}
+  m_Flip: {x: 0, y: 0, z: 0}
+  m_UseCustomVertexStreams: 0
+  m_EnableGPUInstancing: 0
+  m_ApplyActiveColorSpace: 0
+  m_AllowRoll: 1
+  m_FreeformStretching: 0
+  m_RotateWithStretchDirection: 1
+  m_VertexStreams: 0001030405
+  m_Mesh: {fileID: 0}
+  m_Mesh1: {fileID: 0}
+  m_Mesh2: {fileID: 0}
+  m_Mesh3: {fileID: 0}
+  m_MeshWeighting: 1
+  m_MeshWeighting1: 1
+  m_MeshWeighting2: 1
+  m_MeshWeighting3: 1
+  m_MaskInteraction: 0
+--- !u!1 &1474531783930625
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4843449507263144}
+  m_Layer: 0
+  m_Name: HoldGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4843449507263144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474531783930625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4958456144806036}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1042086923706140
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4889554259635187}
+  - component: {fileID: 114025663522023017}
+  m_Layer: 0
+  m_Name: GunRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4889554259635187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042086923706140}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4260635185616140}
+  - {fileID: 4078845358809973}
+  - {fileID: 4891073671471283}
+  - {fileID: 4498725042514169}
+  - {fileID: 4020560898470604}
+  m_Father: {fileID: 4958028844015281}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114025663522023017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042086923706140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c092e0445c31a1257424a3e0f54287, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isGunOfEnemy: 1
+  gunValueDetail:
+    element: 0
+    gunsLevelDetail: []
+    atkSpeed:
+      currentCryptoKey: 0
+      currentCryptoOffset: 0
+      hiddenValue1:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValue2:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValueOld:
+      inited: 0
+      fakeValue: 0
+      fakeValueActive: 0
+    criticalChance: 0
+    freezeStatusEffect:
+      basicFreezingChance: 0
+      basicTimeFreezing: 0
+      basicSlowChance: 0
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffect:
+      basicPoisonChance: 0
+      basicTimePoison: 0
+      basicDamagePoison: 0
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffect:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    knockBackInfo:
+      knockBackChance: 0
+      timeKnockBack: 0
+      knockBackRange: 0
+    canParalyzed: 0
+  effShot: {fileID: 0}
+  speedOfBullet: 0
+  rangeShot: 0
+  numberOfShot: 1
+  numWavePerShot: 1
+  numerOfBulletPerWave: 1
+  timeDelayForEachWave: 0
+  orientate: 0
+  findTargetController: {fileID: 0}
+  _gunControllers:
+  - {fileID: 114220507675142048}
+  - {fileID: 114789152018628846}
+  - {fileID: 114911854980355675}
+  - {fileID: 114034686613367573}
+  - {fileID: 114577855828255939}
+--- !u!1 &1465433225419885
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4260635185616140}
+  - component: {fileID: 114220507675142048}
+  m_Layer: 0
+  m_Name: Gun 0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4260635185616140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465433225419885}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4889554259635187}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114220507675142048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465433225419885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c092e0445c31a1257424a3e0f54287, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isGunOfEnemy: 1
+  gunValueDetail:
+    element: 0
+    gunsLevelDetail: []
+    atkSpeed:
+      currentCryptoKey: 0
+      currentCryptoOffset: 0
+      hiddenValue1:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValue2:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValueOld:
+      inited: 0
+      fakeValue: 0
+      fakeValueActive: 0
+    criticalChance: 0
+    freezeStatusEffect:
+      basicFreezingChance: 0
+      basicTimeFreezing: 0
+      basicSlowChance: 0
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffect:
+      basicPoisonChance: 0
+      basicTimePoison: 0
+      basicDamagePoison: 0
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffect:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    knockBackInfo:
+      knockBackChance: 0
+      timeKnockBack: 0
+      knockBackRange: 0
+    canParalyzed: 0
+  effShot: {fileID: 0}
+  speedOfBullet: 5
+  rangeShot: 6
+  numberOfShot: 1
+  numWavePerShot: 1
+  numerOfBulletPerWave: 1
+  timeDelayForEachWave: 0
+  orientate: 0
+  findTargetController: {fileID: 0}
+  _gunControllers: []
+--- !u!1 &1732954885257123
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4078845358809973}
+  - component: {fileID: 114789152018628846}
+  m_Layer: 0
+  m_Name: Gun 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4078845358809973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732954885257123}
+  m_LocalRotation: {x: 0, y: 0, z: 0.13052616, w: 0.9914449}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4889554259635187}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -14.999996}
+--- !u!114 &114789152018628846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732954885257123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c092e0445c31a1257424a3e0f54287, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isGunOfEnemy: 1
+  gunValueDetail:
+    element: 0
+    gunsLevelDetail: []
+    atkSpeed:
+      currentCryptoKey: 0
+      currentCryptoOffset: 0
+      hiddenValue1:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValue2:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValueOld:
+      inited: 0
+      fakeValue: 0
+      fakeValueActive: 0
+    criticalChance: 0
+    freezeStatusEffect:
+      basicFreezingChance: 0
+      basicTimeFreezing: 0
+      basicSlowChance: 0
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffect:
+      basicPoisonChance: 0
+      basicTimePoison: 0
+      basicDamagePoison: 0
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffect:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    knockBackInfo:
+      knockBackChance: 0
+      timeKnockBack: 0
+      knockBackRange: 0
+    canParalyzed: 0
+  effShot: {fileID: 0}
+  speedOfBullet: 5
+  rangeShot: 6
+  numberOfShot: 1
+  numWavePerShot: 1
+  numerOfBulletPerWave: 1
+  timeDelayForEachWave: 0
+  orientate: 0
+  findTargetController: {fileID: 0}
+  _gunControllers: []
+--- !u!1 &1909426169049771
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4891073671471283}
+  - component: {fileID: 114911854980355675}
+  m_Layer: 0
+  m_Name: Gun 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4891073671471283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909426169049771}
+  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4889554259635187}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -30.000008}
+--- !u!114 &114911854980355675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909426169049771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c092e0445c31a1257424a3e0f54287, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isGunOfEnemy: 1
+  gunValueDetail:
+    element: 0
+    gunsLevelDetail: []
+    atkSpeed:
+      currentCryptoKey: 0
+      currentCryptoOffset: 0
+      hiddenValue1:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValue2:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValueOld:
+      inited: 0
+      fakeValue: 0
+      fakeValueActive: 0
+    criticalChance: 0
+    freezeStatusEffect:
+      basicFreezingChance: 0
+      basicTimeFreezing: 0
+      basicSlowChance: 0
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffect:
+      basicPoisonChance: 0
+      basicTimePoison: 0
+      basicDamagePoison: 0
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffect:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    knockBackInfo:
+      knockBackChance: 0
+      timeKnockBack: 0
+      knockBackRange: 0
+    canParalyzed: 0
+  effShot: {fileID: 0}
+  speedOfBullet: 5
+  rangeShot: 6
+  numberOfShot: 1
+  numWavePerShot: 1
+  numerOfBulletPerWave: 1
+  timeDelayForEachWave: 0
+  orientate: 0
+  findTargetController: {fileID: 0}
+  _gunControllers: []
+--- !u!1 &1548797470010786
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4498725042514169}
+  - component: {fileID: 114034686613367573}
+  m_Layer: 0
+  m_Name: Gun 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4498725042514169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548797470010786}
+  m_LocalRotation: {x: 0, y: 0, z: -0.13052624, w: 0.9914449}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4889554259635187}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 15.000005}
+--- !u!114 &114034686613367573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548797470010786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c092e0445c31a1257424a3e0f54287, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isGunOfEnemy: 1
+  gunValueDetail:
+    element: 0
+    gunsLevelDetail: []
+    atkSpeed:
+      currentCryptoKey: 0
+      currentCryptoOffset: 0
+      hiddenValue1:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValue2:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValueOld:
+      inited: 0
+      fakeValue: 0
+      fakeValueActive: 0
+    criticalChance: 0
+    freezeStatusEffect:
+      basicFreezingChance: 0
+      basicTimeFreezing: 0
+      basicSlowChance: 0
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffect:
+      basicPoisonChance: 0
+      basicTimePoison: 0
+      basicDamagePoison: 0
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffect:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    knockBackInfo:
+      knockBackChance: 0
+      timeKnockBack: 0
+      knockBackRange: 0
+    canParalyzed: 0
+  effShot: {fileID: 0}
+  speedOfBullet: 5
+  rangeShot: 6
+  numberOfShot: 1
+  numWavePerShot: 1
+  numerOfBulletPerWave: 1
+  timeDelayForEachWave: 0
+  orientate: 0
+  findTargetController: {fileID: 0}
+  _gunControllers: []
+--- !u!1 &1670890277511773
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4020560898470604}
+  - component: {fileID: 114577855828255939}
+  m_Layer: 0
+  m_Name: Gun 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4020560898470604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670890277511773}
+  m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4889554259635187}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 29.999994}
+--- !u!114 &114577855828255939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670890277511773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c092e0445c31a1257424a3e0f54287, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isGunOfEnemy: 1
+  gunValueDetail:
+    element: 0
+    gunsLevelDetail: []
+    atkSpeed:
+      currentCryptoKey: 0
+      currentCryptoOffset: 0
+      hiddenValue1:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValue2:
+        b1: 0
+        b2: 0
+        b3: 0
+        b4: 0
+      hiddenValueOld:
+      inited: 0
+      fakeValue: 0
+      fakeValueActive: 0
+    criticalChance: 0
+    freezeStatusEffect:
+      basicFreezingChance: 0
+      basicTimeFreezing: 0
+      basicSlowChance: 0
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffect:
+      basicPoisonChance: 0
+      basicTimePoison: 0
+      basicDamagePoison: 0
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffect:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    knockBackInfo:
+      knockBackChance: 0
+      timeKnockBack: 0
+      knockBackRange: 0
+    canParalyzed: 0
+  effShot: {fileID: 0}
+  speedOfBullet: 5
+  rangeShot: 6
+  numberOfShot: 1
+  numWavePerShot: 1
+  numerOfBulletPerWave: 1
+  timeDelayForEachWave: 0
+  orientate: 0
+  findTargetController: {fileID: 0}
+  _gunControllers: []
+--- !u!1 &1084547905350423
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4150124052361901}
+  - component: {fileID: 114380849395750498}
+  m_Layer: 0
+  m_Name: MinionRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4150124052361901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084547905350423}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4958028844015281}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114380849395750498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084547905350423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f3b73ac36d9c561ffd573b62c715b8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  element: 0
+  bodyCharInfo:
+    sizeOnCamera: {x: 1, y: 1}
+    bodySize: {x: 1, y: 1}
+    centerPos: {x: 0, y: 0}
+  listPrefabNeedToCreateInPool: []
+  shakeCameraInfo:
+    timeShake: 0.2
+    shakeIntensity: 0.05
+    canShake: 1
+  effDiePrefab: {fileID: 0}
+  effDiePrefabOld: {fileID: 0}
+  hpBarPrefab: {fileID: 0}
+  crosshairPrefab: {fileID: 0}
+  myAnimator: {fileID: 0}
+  transformDefaultToAddEffHit: {fileID: 0}
+  myBodyPartRenderers: []
+  myNameTerm:
+  _listGuns: []
+  _listSfxShot: []
+  hp: 0
+  maxHp: 0
+  hasArmor: 0
+  score: 0
+  baseLevel: 100
+  moveSpeedIncreasePerLevel: 0.015
+  attackSpeedIncreasePerLevel: 0.005
+  bulletSpeedIncreasePerLevel: 0.03
+  hpIncreasementPerLevel: 0.015
+  scoreBonusIncreasementPerLevel: 0.05
+  itemDropRate: 0
+  listItemCanDrop: []
+  numItemCanDrop:
+    min: 0
+    max: 0
+  resistanceDetail:
+    poisonResistance: 0
+    burnedResistance: 0
+    coldResistance: 0
+  graphOwner: {fileID: 0}
+  gunGroupController: {fileID: 0}
+  _followPosition: {fileID: 0}
+  _followPositionSFM: {fileID: 0}
+  MovementStatus: 0
+  _smoothTime: 0
+  _distanceSqr: 0
+  _listUnderlingEnemy: []
+  parent: {fileID: 0}

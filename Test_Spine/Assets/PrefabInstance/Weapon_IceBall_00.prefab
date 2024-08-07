@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1038886851819239
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4137231662513795}
+  - component: {fileID: 114974298532164913}
+  m_Layer: 0
+  m_Name: Weapon_IceBall_00
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4137231662513795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038886851819239}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.4564276, y: -3.5214086, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4959208685341263}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114974298532164913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038886851819239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeb2b4f035f0094a9222b6bdb406b39, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  listPrefabNeedToCreateInPool:
+  - myType: 1
+    prefab: {fileID: 1481813281716578, guid: a640c7531ddd20048b33c0b860673ef1, type: 2}
+    quantity: 20
+  gunController: {fileID: 114756643294126001}
+--- !u!1 &1903543957118477
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4959208685341263}
+  - component: {fileID: 114756643294126001}
+  - component: {fileID: 114272609824849484}
+  m_Layer: 0
+  m_Name: MyGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4959208685341263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903543957118477}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4137231662513795}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114756643294126001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903543957118477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddda0c59beaa7d11641567f4aa4d98f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isGunOfEnemy: 0
+  gunValueDetail:
+    element: 0
+    gunsLevelDetail:
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1481813281716578, guid: a640c7531ddd20048b33c0b860673ef1, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    atkSpeed:
+      currentCryptoKey: 522333
+      currentCryptoOffset: 459798
+      hiddenValue1:
+        b1: 251
+        b2: 11
+        b3: 85
+        b4: 63
+      hiddenValue2:
+        b1: 219
+        b2: 236
+        b3: 60
+        b4: 63
+      hiddenValueOld:
+      inited: 1
+      fakeValue: 1.5
+      fakeValueActive: 1
+    criticalChance: 0
+    freezeStatusEffect:
+      basicFreezingChance: 50
+      basicTimeFreezing: 1
+      basicSlowChance: 100
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffect:
+      basicPoisonChance: 0
+      basicTimePoison: 0
+      basicDamagePoison: 0
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffect:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    knockBackInfo:
+      knockBackChance: 0
+      timeKnockBack: 0
+      knockBackRange: 0
+    canParalyzed: 0
+  effShot: {fileID: 0}
+  speedOfBullet: 8
+  rangeShot: 12
+  numberOfShot: -1
+  numWavePerShot: 1
+  numerOfBulletPerWave: 1
+  timeDelayForEachWave: 0
+  orientate: 0
+  findTargetController: {fileID: 114272609824849484}
+  anchorPoints:
+  - point: {x: 1, y: 1.2, z: 0}
+    localPosRandomX:
+      min: 0
+      max: 0
+    localPosRandomY:
+      min: 0
+      max: 0
+  - point: {x: 1.5, y: 0, z: 0}
+    localPosRandomX:
+      min: 0
+      max: 0
+    localPosRandomY:
+      min: 0
+      max: 0
+  - point: {x: 1, y: -1.2, z: 0}
+    localPosRandomX:
+      min: 0
+      max: 0
+    localPosRandomY:
+      min: 0
+      max: 0
+  - point: {x: -1, y: -1.2, z: 0}
+    localPosRandomX:
+      min: 0
+      max: 0
+    localPosRandomY:
+      min: 0
+      max: 0
+  - point: {x: -1.5, y: 0, z: 0}
+    localPosRandomX:
+      min: 0
+      max: 0
+    localPosRandomY:
+      min: 0
+      max: 0
+  - point: {x: -1, y: 1.2, z: 0}
+    localPosRandomX:
+      min: 0
+      max: 0
+    localPosRandomY:
+      min: 0
+      max: 0
+  timeDelayToPursue: 0.1
+  dTime: 0
+  defaultRotation: {x: 0, y: 0, z: 0}
+  isPursue: 1
+  isSuperShot: 0
+--- !u!114 &114272609824849484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903543957118477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d235d28ac5116fce39abc6c6f355ff87, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  targetType: 1
+  lockTargetOnAwake: 0

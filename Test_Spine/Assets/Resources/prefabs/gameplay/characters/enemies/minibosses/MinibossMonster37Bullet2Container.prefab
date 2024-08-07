@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1608171947751532
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4319712064115099}
+  - component: {fileID: 114897593502774313}
+  - component: {fileID: 50497067290681425}
+  m_Layer: 0
+  m_Name: MinibossMonster37Bullet2Container
+  m_TagString: BulletOfEnemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4319712064115099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608171947751532}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.98, y: -3.4494708, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4068485868525685}
+  - {fileID: 4241126103791678}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114897593502774313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608171947751532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e0ae6621f6b5f573344d9c3dbd6c9f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  bulletInfo:
+    style: 0
+    isInstalled: 0
+    myCompass: {fileID: 0}
+    valueDetail:
+      element: 0
+      damageBasic:
+        currentCryptoKey: 110795
+        currentCryptoOffset: 110795
+        hiddenValue1:
+          b1: 117
+          b2: 104
+          b3: 119
+          b4: 66
+        hiddenValue2:
+          b1: 19
+          b2: 56
+          b3: 29
+          b4: 66
+        hiddenValueOld:
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+      armorPierceDamage: 1
+      criticalChance: 0
+      freezingChance: 0
+      timeFreezing: 0
+      slowChance: 0
+      timeSlow: 0
+      percentSpeedSlow: 0
+      poisonChance: 0
+      timePoison: 0
+      damagePoison: 0
+      burnChance: 0
+      timeBurn: 0
+      percentDamageBonusWhenBurn: 0
+      canParalyzed: 0
+      knockBackInfo:
+        knockBackChance: 0
+        timeKnockBack: 0
+        knockBackRange: 0
+    mainCollider: {fileID: 61167928965737950}
+    canExplode: 0
+    damagedBeforeExploding: 0
+    canPenetrated: 0
+  shootRay: 0
+  rayPrefab: {fileID: 0}
+  raySpeed: 0
+  rayRange: 0
+  rayDegree: 0
+  numberOfRays: 0
+  bulletMoveBackSpeed: 0
+  bulletMoveBackDelta: 0
+  autoDestroyWhenOutOfCamera: 1
+  rotSpeed: 45
+  timeFollowTarget: 4
+  bodyInfo:
+    sizeOnCamera: {x: 2, y: 2}
+    bodySize: {x: 0, y: 0}
+    centerPos: {x: 0, y: 0}
+  compass: {fileID: 4241126103791678}
+  explosionBonus: {fileID: 0}
+  effectHit: {fileID: 0}
+  effectCritical: {fileID: 0}
+  findTargetController: {fileID: 0}
+  autoReTargeting: 0
+  monsterPrefab: {fileID: 1065614099379155, guid: c15eeba745536504ca3940c994d6e28d, type: 2}
+  rotateMonsterToMatchBulletRotation: 0
+--- !u!50 &50497067290681425
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608171947751532}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!1 &1273803697788768
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4068485868525685}
+  - component: {fileID: 61167928965737950}
+  m_Layer: 10
+  m_Name: Body
+  m_TagString: BulletOfEnemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4068485868525685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273803697788768}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4319712064115099}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!61 &61167928965737950
+BoxCollider2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273803697788768}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.02}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
+--- !u!1 &1525589265792942
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4241126103791678}
+  m_Layer: 0
+  m_Name: Compass
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4241126103791678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525589265792942}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4319712064115099}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}

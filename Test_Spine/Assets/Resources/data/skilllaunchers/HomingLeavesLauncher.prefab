@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1266736389690506
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4648083668066424}
+  - component: {fileID: 114286453876041254}
+  - component: {fileID: 114075774971072487}
+  - component: {fileID: 114087251199784854}
+  m_Layer: 0
+  m_Name: HomingLeavesLauncher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4648083668066424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266736389690506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.572674, y: 7.606199, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114286453876041254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266736389690506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddda0c59beaa7d11641567f4aa4d98f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isGunOfEnemy: 0
+  gunValueDetail:
+    element: 2
+    gunsLevelDetail:
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1664186265545177, guid: a0d92be167b435d4c82b152e147e7289, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1664186265545177, guid: a0d92be167b435d4c82b152e147e7289, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1664186265545177, guid: a0d92be167b435d4c82b152e147e7289, type: 2}
+      damage: 0
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 0
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1664186265545177, guid: a0d92be167b435d4c82b152e147e7289, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 1
+    - bulletSprite: {fileID: 0}
+      bulletPrefab: {fileID: 1664186265545177, guid: a0d92be167b435d4c82b152e147e7289, type: 2}
+      damage: 100
+      sizeOfBulletIncrease: 0
+      armorPierceDamage: 0
+    atkSpeed:
+      currentCryptoKey: 522333
+      currentCryptoOffset: 459798
+      hiddenValue1:
+        b1: 75
+        b2: 252
+        b3: 0
+        b4: 0
+      hiddenValue2:
+        b1: 75
+        b2: 252
+        b3: 0
+        b4: 0
+      hiddenValueOld:
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 1
+    criticalChance: 0
+    freezeStatusEffect:
+      basicFreezingChance: 0
+      basicTimeFreezing: 0
+      basicSlowChance: 0
+      basicTimeSlow: 0
+      basicPercentSpeedSlow: 0
+      additionalFreezingChance: 0
+      additionalTimeFreezing: 0
+      additionalSlowChance: 0
+      additionalTimeSlow: 0
+      additionalPercentSpeedSlow: 0
+    poisonStatusEffect:
+      basicPoisonChance: 0
+      basicTimePoison: 0
+      basicDamagePoison: 0
+      additionalPoisonChance: 0
+      additionalTimePoison: 0
+    burnStatusEffect:
+      basicBurnChance: 0
+      basicTimeBurn: 0
+      basicPercentDamageBonusWhenBurn: 0
+      additionalBurnChance: 0
+      additionalTimeBurn: 0
+      additionalPercentDamageBonusWhenBurn: 0
+    knockBackInfo:
+      knockBackChance: 0
+      timeKnockBack: 0
+      knockBackRange: 0
+    canParalyzed: 0
+  effShot: {fileID: 0}
+  speedOfBullet: 10
+  rangeShot: 12
+  numberOfShot: -1
+  numWavePerShot: 1
+  numerOfBulletPerWave: 1
+  timeDelayForEachWave: 0.15
+  orientate: 1
+  findTargetController: {fileID: 114075774971072487}
+  anchorPoints:
+  - point: {x: -2, y: -1, z: 0}
+    localPosRandomX:
+      min: 0
+      max: 0
+    localPosRandomY:
+      min: 0
+      max: 0
+  - point: {x: -1, y: -2, z: 0}
+    localPosRandomX:
+      min: 0
+      max: 0
+    localPosRandomY:
+      min: 0
+      max: 0
+  - point: {x: 1, y: -2, z: 0}
+    localPosRandomX:
+      min: 0
+      max: 0
+    localPosRandomY:
+      min: 0
+      max: 0
+  - point: {x: 2, y: -1, z: 0}
+    localPosRandomX:
+      min: 0
+      max: 0
+    localPosRandomY:
+      min: 0
+      max: 0
+  timeDelayToPursue: 0.3
+  dTime: 0
+  defaultRotation: {x: 0, y: 0, z: 0}
+  isPursue: 1
+  isSuperShot: 0
+--- !u!114 &114075774971072487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266736389690506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d235d28ac5116fce39abc6c6f355ff87, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  targetType: 1
+  lockTargetOnAwake: 0
+--- !u!114 &114087251199784854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266736389690506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa0157045e5e1a0a2ac56fa310febc3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  listPrefabNeedToCreateInPool:
+  - myType: 1
+    prefab: {fileID: 1664186265545177, guid: a0d92be167b435d4c82b152e147e7289, type: 2}
+    quantity: 4
+  - myType: 2
+    prefab: {fileID: 1150228477969829, guid: dc99a4008afe8c84dbab110ed1092e17, type: 2}
+    quantity: 4
+  - myType: 2
+    prefab: {fileID: 1446472048128242, guid: aabcac118f85a8b48b49b225f9785b3f, type: 2}
+    quantity: 4
+  cooldown: 0
+  gun: {fileID: 114286453876041254}
